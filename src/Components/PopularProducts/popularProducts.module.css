@@ -1,0 +1,130 @@
+.popularProductsContainer {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    place-content: start;
+    gap: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.productContainer {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgContainer {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productImg {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    transition: all 0.4s ease;
+}
+
+.headingContainer {
+    position: relative;
+    top: -20px;
+    background-color: white;
+    left: 0;
+    width: 80%;
+    border: 2px solid #d0e20d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.heading {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 1.8rem;
+  color:rgb(125, 125, 125);
+  text-align: center;
+}
+
+.title {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(57, 57, 57);
+    text-align: center;
+}
+
+.linkContainer {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productContainer:hover .productImg {
+    transform: scale(1.1);
+}
+
+.link {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid #d0e20d;
+    color: rgb(57, 57, 57);
+    font-size: 14px;
+    transition: all 0.4s linear;
+    text-align: center;
+}
+
+.link:hover {
+    background-color: #d0e20d;
+    color: rgb(57, 57, 57);
+}
+
+@media (max-width: 767px) {
+    .popularProductsContainer {
+        margin: 10px auto;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+}

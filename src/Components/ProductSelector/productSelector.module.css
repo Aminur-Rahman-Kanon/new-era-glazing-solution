@@ -1,0 +1,34 @@
+.productSelectorContainer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icon {
+    font-size: 25px;
+    margin-right: 8px;
+}
+
+.text {
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.productSelectorContainer:hover .icon {
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .text {
+        display: none;
+    }
+}

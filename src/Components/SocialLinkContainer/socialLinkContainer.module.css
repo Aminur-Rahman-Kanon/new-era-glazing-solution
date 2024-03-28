@@ -1,0 +1,23 @@
+.wrapper {
+    width: 100%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialIconContainer {
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 20px;
+    color: inherit;
+    transition: all 0.5s linear;
+}
+
+.socialIconContainer:hover {
+    color: #99a703;
+}
+
+.socialIcon {
+    color: inherit;
+}

@@ -1,0 +1,33 @@
+.topbarContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #00000091;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s linear;
+    z-index: 200;
+}
+
+.bottomContainer {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr {
+    width: 100%;
+    background-color: none;
+    border-bottom:  1px white;
+    box-sizing: border-box;
+    margin: 0;
+}

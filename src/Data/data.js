@@ -1,0 +1,170 @@
+import biFoldingDoors from '../Assets/bi-folding_doors.jpg';
+import slidingDoors from '../Assets/sliding_doors.jpg';
+import aluminiumWindows from '../Assets/aluminium_windows.jpg';
+import glassRoofing from '../Assets/glass_roofing.jpg';
+import steelDoors from '../Assets/steel_doors.jpg';
+import entranceDoors from '../Assets/entrance_doors.jpg';
+import p1 from '../Assets/products/p1.jpg';
+import p2 from '../Assets/products/p2.jpg';
+import p3 from '../Assets/products/p3.jpg';
+import p4 from '../Assets/products/p4.jpg';
+import p5 from '../Assets/products/p5.jpg';
+import p6 from '../Assets/products/p6.jpg';
+import p7 from '../Assets/products/p7.jpg';
+import p8 from '../Assets/products/p8.jpg';
+import p9 from '../Assets/products/p9.jpg';
+import p10 from '../Assets/products/p10.jpeg';
+import p11 from '../Assets/products/p11.jpg';
+import p12 from '../Assets/products/p12.jpg';
+import p13 from '../Assets/products/p13.jpg';
+import p14 from '../Assets/products/p14.jpg';
+import p15 from '../Assets/products/p15.jpg';
+import p16 from '../Assets/products/p16.jpg';
+import p17 from '../Assets/products/p17.jpg';
+import p18 from '../Assets/products/p18.jpg';
+import p19 from '../Assets/products/p19.jpg';
+import p20 from '../Assets/products/p20.jpg';
+import p21 from '../Assets/products/p21.jpg';
+import p22 from '../Assets/products/p22.jpg';
+import p23 from '../Assets/products/p23.jpg';
+import p24 from '../Assets/products/p24.jpg';
+
+export const items = [
+    'windows', 'doors', 'conservatories', 'porches', 'orangeries', 'rooftrim', 'garage doors', 'extensions', 'cladding'
+]
+
+export const popularProducts = [
+    {
+        title: 'Bi-Folding Doors',
+        img: biFoldingDoors,
+        link: ''
+    },
+    {
+        title: 'Sliding Doors',
+        img: slidingDoors,
+        link: ''
+    },
+    {
+        title: 'Aluminium Windows',
+        img: aluminiumWindows,
+        link: ''
+    },
+    {
+        title: 'Distinctive Entrance Doors',
+        img: entranceDoors,
+        link: ''
+    },
+    {
+        title: 'Glass Roofing Systems',
+        img: glassRoofing,
+        link: ''
+    },
+    {
+        title: 'Steel Look Roors & Windows',
+        img: steelDoors,
+        link: ''
+    },
+]
+
+export const testReview = [
+    {
+        id: 1,
+        comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        name: 'Julian Silva',
+        rating: 4
+    },
+    {
+        id: 2,
+        comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        name: 'Brett Lee',
+        rating: 5
+    },
+    {
+        id: 3,
+        comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+        name: 'Wasim Akram',
+        rating: 3
+    },
+    {
+        id: 4,
+        comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        name: 'Brian Lara',
+        rating: 2
+    }
+]
+
+export const products = [
+    {
+        id: 1,
+        heading: 'Aluminium Bi-Folding Doors',
+        product: [
+            'XP View', 'XP88', 'XP10', 'Steel Look Bifold Doors'
+        ]
+    },
+    {
+        id: 2,
+        heading: 'External Sliding Doors',
+        product: [
+            'XP Glide', 'XP Slide 25', 'XP Slide LS25', 'XP Infinite', 'Lift & Slide Doors', 'Double Sliding Patio Doors', 'Triple-Track Sliding Patio Doors'
+        ]
+    },
+    {
+        id: 3,
+        heading: 'Aluminium Windows',
+        product: [
+            'Aluminium Casement Windows', 'Aluminium Bay Windows', 'Tilt And Turn Windows', 'Aluminium Curtain Walling', 'Shaped Windows'
+        ]
+    },
+    {
+        id: 4,
+        heading: 'Aluminium Front Doors',
+        product: [
+            'Premium Front Doors', 'XP77 Entrance Doors'
+        ]
+    },
+    {
+        id: 5,
+        heading: 'Glass Roof Systems',
+        product: [
+            'Roof Lantern Skylights', 'Glass Lean-To Roofing', 'Flat Roof Skylights', 'Pyramid Roof Lanterns'
+        ]
+    },
+    {
+        id: 6,
+        heading: 'Bespoke Glass Solutions',
+        product: [
+            'Glass Balustrade Balcony', 'Glass Entrance Artiums'
+        ]
+    }
+]
+
+export const productImg = {
+    "XP View": p1,
+    "XP88": p2,
+    "XP10": p3,
+    "Steel Look Bifold Doors": p4,
+    "XP Glide": p5,
+    "XP Slide 25": p6,
+    "XP Slide LS25": p7,
+    "XP Infinite": p8,
+    "Lift & Slide Doors": p9,
+    "Double Sliding Patio Doors": p10,
+    "Triple-Track Sliding Patio Doors": p11,
+    "Aluminium Casement Windows": p12,
+    "Aluminium Bay Windows": p13,
+    "Tilt And Turn Windows": p14,
+    "Aluminium Curtain Walling": p15,
+    "Shaped Windows": p16,
+    "Premium Front Doors": p17,
+    "XP77 Entrance Doors": p18,
+    "Roof Lantern Skylights": p19,
+    "Glass Lean-To Roofing": p20,
+    "Flat Roof Skylights": p21,
+    "Pyramid Roof Lanterns": p22,
+    "Glass Balustrade Balcony": p23,
+    "Glass Entrance Artiums": p24
+}
+
+export const brochureItems = [
+    'BI-FOLDS', 'SLIDING DOORS', 'ROOFS', 'WINDOWS', 'HORIZON WINDOWS', 'FRONT DOORS', 'SUMMARY OF ALL PRODUCTS'
+]

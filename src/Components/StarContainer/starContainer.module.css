@@ -1,0 +1,16 @@
+.starContainer {
+    padding: 10px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.activeStar {
+    color: #b7c708;
+    margin-right: 5px;
+}
+
+.inActiveStar {
+    color: lightgray;
+    margin-right: 5px;
+}
