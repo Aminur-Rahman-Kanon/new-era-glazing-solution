@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Topbar from './Components/Topbar/topbar';
@@ -8,6 +8,7 @@ import Sidedrawer from './Components/Sidedrawer/sidedrawer';
 import ContextApi from './Components/ContextApi/contextApi';
 import ProductContainer from './Components/ProductContainer/productContainer';
 import Brochure from './Pages/Brochure/brochure';
+import RequestQuote from './Pages/RequestQoute/requestQuote';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Homepage />}/>
               <Route path='/brochure' element={<Brochure />} />
+              <Route path='/request-quote' element={<RequestQuote /> }/>
             </Routes>
             <Footer />
         </ContextApi.Provider>

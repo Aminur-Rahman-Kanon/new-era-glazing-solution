@@ -11,7 +11,7 @@ const AdditionalTopbar = () => {
         </div>
         <div className={styles.rightItemContainer}>
             <Link to="/brochure" className={styles.rightItem}>Free Brochure</Link>
-            <Link to={''} className={styles.rightItem}>Request Quote</Link>
+            <Link to='request-quote' className={styles.rightItem}>Request Quote</Link>
             <Link to={''} className={styles.rightItem}>Contact/Visit</Link>
         </div>
     </div>

@@ -36,7 +36,6 @@ const ContactFormContainer = () => {
 
     return (
         <div className={styles.contactFormMain}>
-            <h2 className={styles.formH2}>Get A Price</h2>
             <form className={styles.contactForm}>
                 <div className={styles.selectContainer}>
                     <select className={styles.select} defaultValue={"Select a product"} onChange={(e) => setProduct(e.target.value)}>
@@ -57,6 +56,7 @@ const ContactFormContainer = () => {
                     <input className={styles.input}
                             type='number'
                             placeholder='Contact Number'
+                            style={numberValidation ? {boxShadow: '0px 0px 15px 2px #d0e20d00'} : {boxShadow: '0px 0px 15px 2px #9d0e0e'}}
                             onFocus={() => focusElement(1, styles)}
                             onBlur={() => leaveFocus(1, styles)}
                             onChange={(e) => setNumber(e.target.value)}/>

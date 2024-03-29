@@ -104,6 +104,9 @@ const Sidedrawer = () => {
                                 <h3 className={styles.itemHeading}>CONTACT / VISIT</h3>
                                 <ul className={styles.items}>
                                     <li className={styles.item}>
+                                        <Link to='/request-quote' className={styles.itemLink}>REQUEST A QUOTE</Link>
+                                    </li>
+                                    <li className={styles.item}>
                                         <Link to={''} className={styles.itemLink}>SHOWROOMS</Link>
                                     </li>
                                     <li className={styles.item}>

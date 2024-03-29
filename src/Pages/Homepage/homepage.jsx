@@ -38,12 +38,10 @@ const Homepage = () => {
                         </div>
                     </div>
                     <div data-aos="fade-up-left" className={styles.contactFormContainer}>
+                        <h2 className={styles.contactFormHeading}>GET A PRICE</h2>
                         <ContactFormContainer />
                     </div>
                 </div>
-                {/* <div className={styles.responsiveContactFormContainer}>
-                    <ContactFormContainer />
-                </div> */}
             </section>
             <section className={styles.section5}>
                 <div className={styles.section5BgContainer}>
