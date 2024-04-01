@@ -21,7 +21,7 @@ function App() {
     const [product, setProduct] = useState([]);
 
     useEffect(() => {
-      fetch('http://localhost:8080/fetch-products').then(res => res.json())
+      fetch('https://new-era-glazing-solution-server.onrender.com/fetch-products').then(res => res.json())
       .then(data => {
         if (data.status === 'success'){
           setProduct(data.data);
