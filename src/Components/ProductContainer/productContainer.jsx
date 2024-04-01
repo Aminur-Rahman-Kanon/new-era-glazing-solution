@@ -22,7 +22,7 @@ const ProductContainer = () => {
         <h2 className={styles.productHeading}>{prd.heading}</h2>
         <ul className={styles.products}>
             {prd.product.map((item, idx) => <li key={idx+10} className={styles.product} onMouseOver={() => setPrdImg(productImg[item])}>
-                <Link to={''} className={styles.productLink}>{item}</Link>
+                <a href={'/products/xp view'} className={styles.productLink}>{item}</a>
             </li>)}
         </ul>
     </div>)

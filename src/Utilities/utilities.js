@@ -92,3 +92,28 @@ export const focusElementBrochure = (index, styles) => {
         input.className = `${styles.input} ${styles.activeInput}`;
     }
 }
+
+export const sliderHandler = ( el, styles) => {
+    const element = document.querySelectorAll(`.${styles[el]}`);
+    console.log(element);
+
+    element.forEach(ele => {
+        const slider = ele.children[2];
+        const showBtn = ele.children[1].children[1];
+        const hideBtn = ele.children[2].children[2];
+        console.log(slider);
+        console.log(showBtn);
+        console.log(hideBtn);
+    
+        showBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            slider.className = `${styles.header7SliderContainer} ${styles.show}`
+        })
+    
+        hideBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            slider.className = styles.header7SliderContainer;
+        })
+    })
+
+}
