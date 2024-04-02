@@ -70,8 +70,9 @@
 }
 
 .header1H2 {
-    font-size: 2rem;
-    letter-spacing: 1px;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
     margin: 10px 0;
 }
 
@@ -212,8 +213,9 @@
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: space-evenly;
-    align-items: flex-start;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
     font-family: "DM Sans", sans-serif;
 }
 
@@ -221,7 +223,6 @@
     width: 100%;
     height: 100%;
     padding: 10px;
-    margin: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -918,6 +919,22 @@
 }
 
 @media (max-width: 450px) {
+    .header2Heading {
+        padding: 20px;
+    }
+
+    .header3 {
+        padding: 10px;
+    }
+
+    .header3Middle {
+        padding: 10px;
+    }
+
+    .header4Heading {
+        padding: 20px;
+    }
+
     .header9Color {
         width: 50px;
         height: 50px;

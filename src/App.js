@@ -11,6 +11,7 @@ import Brochure from './Pages/Brochure/brochure';
 import RequestQuote from './Pages/RequestQoute/requestQuote';
 import Upload from './Pages/Upload/upload';
 import DisplayProduct from './Pages/DisplayProduct/displayProduct';
+import Contact from './Pages/Contact/contact';
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
               <Route path='/request-quote' element={<RequestQuote /> }/>
               <Route path='/upload' element={<Upload />}/>
               <Route path='/products/:productId' element={<DisplayProduct />} />
+              <Route path='/contact' element={<Contact />} />
             </Routes>
             <Footer />
         </ContextApi.Provider>

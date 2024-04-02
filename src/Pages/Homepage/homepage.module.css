@@ -49,13 +49,15 @@
 .headerH1 {
     text-align: center;
     color: white;
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 1px;
 }
 
 .headerP {
     text-align: center;
     color: white;
     font-size: 17px;
-    letter-spacing: 1px;
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -85,8 +87,7 @@
     color: rgb(80, 79, 79);
     font-family: "DM Sans", sans-serif;
     font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: 15px;
     transition: all 0.5s linear;
     background-color: #d0e20d;
 }
@@ -364,6 +365,7 @@
 
 .section3 {
     width: 100%;
+    margin: 50px auto;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
@@ -399,13 +401,13 @@
 .section3Heading {
     font-size: 2rem;
     color: #d0e20d;
+    font-weight: 300;
 }
 
 .section3P {
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-size: 15px;
-    letter-spacing: 1px;
     margin: 10px 0;
     color: white;
 }
@@ -432,6 +434,7 @@
 
 .section4 {
     width: 100%;
+    margin: 50px auto;
     overflow: hidden;
 }
 
@@ -480,7 +483,6 @@
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-size: 15px;
-    letter-spacing: 1px;
     margin: 10px 0;;
     color: #595c5d;
 }
@@ -528,7 +530,6 @@
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-size: 15px;
-    letter-spacing: 1px;
     margin: 10px 0;
     color: white;
 }
@@ -587,7 +588,6 @@
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-size: 15px;
-    letter-spacing: 1px;
     margin: 10px 0;;
     color: #595c5d;
 }
@@ -746,6 +746,10 @@
 }
 
 @media (max-width: 767px) {
+    .headerH1 {
+        font-size: 2.5rem;
+    }
+
     .section2 {
         margin: 20px auto;
         padding: 0;
@@ -785,9 +789,25 @@
         flex-direction: column;
     }
 
+    .headerH1 {
+        font-size: 1.5rem;
+    }
+
+    .headerP {
+        font-size: 14px;
+    }
+
     .headerLink {
         width: 100%;
         margin: 10px auto;
+    }
+
+    .section3Heading {
+        font-size: 1.5rem;
+    }
+
+    .section3P {
+        font-size: 14px;
     }
 
     .section5 {

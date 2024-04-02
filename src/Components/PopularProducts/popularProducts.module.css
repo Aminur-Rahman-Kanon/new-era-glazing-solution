@@ -46,14 +46,14 @@
 .headingContainer {
     position: relative;
     top: -20px;
-    background-color: white;
+    background-color: #d0e20d;
     left: 0;
     width: 80%;
     border: 2px solid #d0e20d;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
