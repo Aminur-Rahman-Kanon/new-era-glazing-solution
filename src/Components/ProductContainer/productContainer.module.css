@@ -86,6 +86,7 @@
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 .productHeading::after {
@@ -125,6 +126,7 @@
 }
 
 .productLink {
+    width: 100%;
     display: block;
     text-decoration: none;
     color: rgb(210, 210, 210);
