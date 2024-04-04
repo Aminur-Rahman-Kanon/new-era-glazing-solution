@@ -3,7 +3,7 @@ import styles from './contactFormContainer.module.css';
 import { items } from "../../Data/data";
 import { leaveFocus, focusElement, emailValiditionHandler, phoneNumberValidationHandler } from '../../Utilities/utilities';
 
-const ContactFormContainer = () => {
+const ContactFormContainer = ({ border }) => {
 
     const item = items.map(item => <option key={item} className={styles.option}>{item}</option>);
 
@@ -37,13 +37,13 @@ const ContactFormContainer = () => {
     return (
         <div className={styles.contactFormMain}>
             <form className={styles.contactForm}>
-                <div className={styles.selectContainer}>
+                <div className={styles.selectContainer} style={border ? {border: '1px solid gray'} : {border: 'none'}}>
                     <select className={styles.select} defaultValue={"Select a product"} onChange={(e) => setProduct(e.target.value)}>
                         <option disabled>Select a product</option>
                         {item}
                     </select>
                 </div>
-                <div className={styles.inputContainer}>
+                <div className={styles.inputContainer} style={border ? {border: '1px solid gray'} : {border: 'none'}}>
                     <span className={styles.label}>Full Name</span>
                     <input className={styles.input}
                             placeholder='Full Name'
@@ -51,7 +51,7 @@ const ContactFormContainer = () => {
                             onBlur={() => leaveFocus(0, styles)}
                             onChange={(e) => setName(e.target.value)}/>
                 </div>
-                <div className={styles.inputContainer}>
+                <div className={styles.inputContainer} style={border ? {border: '1px solid gray'} : {border: 'none'}}>
                     <span className={styles.label}>Contact Number</span>
                     <input className={styles.input}
                             type='number'
@@ -61,7 +61,7 @@ const ContactFormContainer = () => {
                             onBlur={() => leaveFocus(1, styles)}
                             onChange={(e) => setNumber(e.target.value)}/>
                 </div>
-                <div className={styles.inputContainer}>
+                <div className={styles.inputContainer} style={border ? {border: '1px solid gray'} : {border: 'none'}}>
                     <span className={styles.label}>Email Address</span>
                     <input className={styles.input}
                             placeholder='Email Address'
@@ -71,7 +71,7 @@ const ContactFormContainer = () => {
                             onChange={(e) => setEmail(e.target.value)}
                             style={emailValiditaion ? {boxShadow: '0px 0px 15px 2px #d0e20d00'} : {boxShadow: '0px 0px 15px 2px #9d0e0e'}} />
                 </div>
-                <div className={styles.inputContainer}>
+                <div className={styles.inputContainer} style={border ? {border: '1px solid gray'} : {border: 'none'}}>
                     <span className={styles.label}>Full Address</span>
                     <input className={styles.input}
                             placeholder='Full Address'

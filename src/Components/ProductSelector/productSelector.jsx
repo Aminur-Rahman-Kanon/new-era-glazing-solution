@@ -12,7 +12,7 @@ const ProductSelector = () => {
   return (
     <div className={styles.productSelectorContainer} onClick={toggleDisplayProduct}>
       <FontAwesomeIcon icon={faCubesStacked} className={styles.icon}/>
-      <span className={styles.text}>Select Products</span>
+      <span className={styles.text}>Select<br /> Products</span>
     </div>
   )
 }

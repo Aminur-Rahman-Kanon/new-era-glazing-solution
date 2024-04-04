@@ -19,7 +19,6 @@
 .selectContainer {
     width: 100%;
     margin: 10px auto;
-    border: 1px solid gray;
     box-sizing: border-box;
 }
 
@@ -33,13 +32,13 @@
     background-color: white;
     text-transform: capitalize;
     color: gray;
+    font-size: 13px;
 }
 
 .inputContainer {
     position: relative;
     width: 100%;
     margin: 10px auto;
-    border: 1px solid gray;
     box-sizing: border-box;
 }
 
@@ -50,6 +49,7 @@
     outline: none;
     padding-left: 10px;
     box-sizing: border-box;
+    font-size: 13px;
 }
 
 input::-webkit-outer-spin-button,

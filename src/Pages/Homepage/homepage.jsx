@@ -29,7 +29,7 @@ const Homepage = () => {
                 <div className={styles.bgContainer}></div>
                 <div className={styles.elementContainer}>
                     <div className={styles.headerContainer}>
-                        <h1 className={styles.headerH1}>CREATE YOUR SPACE WITH EXPRESS</h1>
+                        <h1 className={styles.headerH1}>CREATE YOUR SPACE WITH NEW AGE</h1>
                         <p className={styles.headerP}>Create a space to call home with our stunning British made products including
                         bifold & sliding doors, entrance doors, windows, glass roofs & much more.</p>
                         <div className={styles.headerLinkContainer}>
@@ -39,9 +39,12 @@ const Homepage = () => {
                     </div>
                     <div data-aos="fade-up-left" className={styles.contactFormContainer}>
                         <h2 className={styles.contactFormHeading}>GET A PRICE</h2>
-                        <ContactFormContainer />
+                        <ContactFormContainer border={false}/>
                     </div>
                 </div>
+            </section>
+            <section className={styles.section4}>
+                <PopularProducts />
             </section>
             <section className={styles.section5}>
                 <div className={styles.section5BgContainer}>
@@ -57,9 +60,9 @@ const Homepage = () => {
                     <p className={styles.section5P2}>Project Windows and Doors is an Australian-owned company ur adipisci sed do eiusmodthat provides high-quality products and expertise for windows and doors needs. Whether you are a builder or a</p>
                     <div className={styles.section5LinkContainer}>
                         <Link className={styles.section5Link1}>More About Us</Link>
-                        <a href='tel:+447510268021' className={styles.section5Link2}>
+                        <a href='tel:+447875531847' className={styles.section5Link2}>
                             <FontAwesomeIcon icon={faPhoneVolume} className={styles.section5Link2Icon}/>
-                            <span className={styles.section5Text}>+4475 102 68021</span>
+                            <span className={styles.section5Text}>+44 7875 531847</span>
                         </a>
                     </div>
                 </div>
@@ -93,9 +96,6 @@ const Homepage = () => {
                     <img src={section3Bg} alt="bi folding doors" className={styles.section3Bg} />
                 </div>
             </section>
-            <section className={styles.section4}>
-                <PopularProducts />
-            </section>
             <section className={styles.review}>
                 <h2 className={styles.reviewHeading}>Our Customer Says ...</h2>
                 <ReviewContainer />
@@ -120,7 +120,7 @@ const Homepage = () => {
             </section>
             <section className={styles.section7}>
                 <div data-aos="fade-right" className={styles.section7HeadingContainer}>
-                    <h2 className={styles.section7Heading1}>IS IT WORTH VISITING A NEW ERA GLAZING SHOWROOM?</h2>
+                    <h2 className={styles.section7Heading1}>IS IT WORTH VISITING A NEW AGE GLAZING SHOWROOM?</h2>
                     <p className={styles.section7P}>There’s no better way to experience how our bi-folding doors, sliding patio doors, aluminium windows and glazed roofing systems could completely transform your property than by visiting one of our beautiful showrooms.</p>
                     <h3 className={styles.section7Heading2}>LONDON SHOWROOMS</h3>
                     <p className={styles.section7P}>We have two stunning London showrooms covering the South East located in <Link to={''} className={styles.section7Link}>Romford, Essex</Link> & <Link to={''} className={styles.section7Link}>Weybridge in Surrey.</Link></p>

@@ -9,6 +9,7 @@ import SidedrawerPortal from '../SidedrawerPortal/sidedrawerPortal';
 import SocialLinkContainer from '../SocialLinkContainer/socialLinkContainer';
 import { displayNestedItemHandler } from '../../Utilities/utilities';
 import ProductSelector from '../ProductSelector/productSelector';
+import Logo from '../Logo/logo';
 
 const Sidedrawer = () => {
 
@@ -30,9 +31,10 @@ const Sidedrawer = () => {
                         <ProductSelector />
                     </div>
                     <div className={styles.logoContainer}>
-                        <Link className={styles.logoContainer}>
+                        <Logo />
+                        {/* <Link className={styles.logoContainer}>
                             <img src={logo} alt="new era glazing solution ltd" className={styles.logo} />
-                        </Link>
+                        </Link> */}
                     </div>
                     <div className={styles.xBtnContainer}>
                         <FontAwesomeIcon icon={faX} className={styles.xBtn} onClick={toggleSidedrawer}/>

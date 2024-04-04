@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "DM Sans", sans-serif;
 }
 
 .wrapper {
@@ -58,10 +59,11 @@
 }
 
 .heading {
-  font-family: "Cinzel Decorative", serif;
   font-size: 1.8rem;
   color:rgb(125, 125, 125);
   text-align: center;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 
 .title {

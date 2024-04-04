@@ -7,7 +7,7 @@ const AdditionalTopbar = () => {
     <>
     <div className={styles.additionalopbarContainer}>
         <div className={styles.leftItemContainer}>
-            <span className={styles.leftItem}>0751 026 8021</span>
+            <span className={styles.leftItem}>+44 7875 531847</span>
         </div>
         <div className={styles.rightItemContainer}>
             <Link to="/brochure" className={styles.rightItem}>Free Brochure</Link>

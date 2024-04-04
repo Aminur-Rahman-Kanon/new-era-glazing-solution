@@ -1,9 +1,7 @@
 .reviewContainer {
     width: 100%;
-    /* height: 80vh; */
     margin: 50px auto;
-    /* min-height: 600px; */
-    padding: 50px 20px;
+    padding: 20px 20px;
     box-sizing: border-box;
     background-image: url('../../Assets/review_bg.jpg');
     background-position: center;
@@ -16,54 +14,60 @@
 }
 
 .reviews {
-    /* position: relative; */
+    position: relative;
     width: 70%;
     margin: auto;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    /* overflow: hidden; */
-    /* background-color: white; */
+    align-items: center;
 }
 
-.headerCircle {
+.avatar-container {
     position: relative;
-    width: 150px;
-    height: 150px;
-    top: 95px;
-    left: -25px;
-    /* background-color: white; */
+    top: 40%;
+    left: 0;
+    transform: translate(0, 40%);
+    width: 200px;
 }
 
-.reviewImg {
+.avatar-img {
     width: 100%;
-}
-
-.comment {
-    text-align: left;
 }
 
 .ratingBody {
     background-color: white;
-    padding: 100px 25px 25px 25px;
+    padding: 80px 20px 20px;
     box-sizing: border-box;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .text {
-    font-family: "DM Sans", sans-serif;    
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .user {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color:#595c5d;
+    margin-bottom: unset;
+    margin: 5px auto;
+}
+
+.star-container {
+    margin: 5px auto;
+    margin-bottom: 30px;
+}
+/*carousel-control*/
+.carousel-status {
+    display: none;
 }
 
 /*carousel component styling*/
@@ -72,6 +76,10 @@
 }
 .carousel-status {
     display: none;
+}
+
+.carousel .control-dots .dot {
+    background: #b7c708!important;
 }
 
 .control-next::before {
@@ -86,20 +94,10 @@
     .control-next::before, .control-prev::before {
         display: none!important;
     }
-
-    .headerCircle {
-        left: -18px;
-    }
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 767px) {
     .reviews {
-        width: 50%;
+        width: 100%;
     }
 }
-
-@media (max-width: 450px) {
-    .reviews {
-        width: 50%;
-    }
-} */

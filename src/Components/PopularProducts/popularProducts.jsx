@@ -21,7 +21,7 @@ const PopularProducts = () => {
 
     return (
         <div className={styles.popularProductsContainer}>
-            <h2 className={styles.heading}>Other Popular Products</h2>
+            <h2 className={styles.heading}>Our Popular Products</h2>
             <div className={styles.wrapper}>
                 {productDisplay}
             </div>

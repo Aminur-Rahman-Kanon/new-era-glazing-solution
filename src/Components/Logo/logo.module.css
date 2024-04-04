@@ -1,12 +1,25 @@
 .logoContainer {
     text-decoration: none;
-    width: 180px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 200;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 .logo {
     width: 100%;
+}
+
+@media (max-width: 767px) {
+    .logoContainer {
+        width: 125px;
+    }
+}
+
+@media (max-width: 450px) {
+    .logoContainer {
+        width: 100px;
+    }
 }

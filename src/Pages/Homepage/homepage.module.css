@@ -3,6 +3,7 @@
 
 .homepageContainer {
     width: 100%;
+    font-family: "DM Sans", sans-serif;
 }
 
 .section1 {
@@ -47,9 +48,10 @@
 }
 
 .headerH1 {
+    font-family: "DM Sans", sans-serif;
     text-align: center;
     color: white;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 200;
     letter-spacing: 1px;
 }
@@ -109,10 +111,12 @@
 }
 
 .contactFormHeading {
-    font-size: 1.5rem;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
     color: #595c5d;
-    letter-spacing: 1px;
-    font-weight: 600;
+    letter-spacing: 0px;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 .responsiveContactFormContainer {
@@ -227,24 +231,28 @@
 }
 
 .section5Heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #bece09;
+    font-weight: 300;
     letter-spacing: 1px;
+    margin-bottom: unset;
+    margin: 10px 0;
 }
 
 .section5P1 {
     font-family: "DM Sans", sans-serif;
-    /*     font-family: "DM Sans", sans-serif; */
     font-size: 1.2rem;
     font-weight: 600;
+    margin-bottom: unset;
+    margin: 10px 0;
 }
 
 .section5P2 {
     font-family: "DM Sans", sans-serif;
-    /*     font-family: "DM Sans", sans-serif; */
-    letter-spacing: 1px;
     line-height: 30px;
     color: #595c5d;
+    margin-bottom: unset;
+    margin: 10px 0;
 }
 
 .section5LinkContainer {
@@ -328,6 +336,8 @@
     font-size: 2rem;
     color: #bece09;
     margin: 10px 0;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .section2P {
@@ -401,7 +411,8 @@
 .section3Heading {
     font-size: 2rem;
     color: #d0e20d;
-    font-weight: 300;
+    font-weight: 200;
+    letter-spacing: 1px;
 }
 
 .section3P {
@@ -449,7 +460,9 @@
 
 .reviewHeading {
     color: #595c5d;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 1px;
 }
 
 .section6 {
@@ -477,6 +490,7 @@
 .section6Heading1 {
     color: #909090;
     font-size: 2rem;
+    font-weight: 300;
 }
 
 .section6P1 {
@@ -523,7 +537,7 @@
 .section6Heading2 {
     font-size: 2rem;
     color: #d0e20d;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .section6P2 {

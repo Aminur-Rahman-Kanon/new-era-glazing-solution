@@ -17,7 +17,7 @@ const Footer = () => {
                 <img src={logo2} alt="made in britain" className={styles.logo} />
             </div>
             <div className={styles.contactContainer}>
-                <h3 className={styles.contactHeading1}>+4475 102 68021</h3>
+                <h3 className={styles.contactHeading1}>+44 7875 531847</h3>
                 <p className={styles.text}>Lines are open Mon-Sat - 8:30am-5:00pm</p>
             </div>
             <div className={styles.socialLinkContainer}>

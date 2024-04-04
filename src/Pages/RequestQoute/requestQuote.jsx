@@ -23,7 +23,7 @@ const RequestQuote = () => {
                 <p className={styles.topHeaderP}>We only need a few details in order to give you an estimate, but feel free to give us specific information to receive a more detailed quote.</p>
             </div>
             <div className={styles.bottomHeader}>
-                <ContactFormContainer />
+                <ContactFormContainer border={true}/>
             </div>
         </div>
     )

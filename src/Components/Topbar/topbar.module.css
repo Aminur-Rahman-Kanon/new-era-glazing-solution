@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 5px;
     box-sizing: border-box;
     display: flex;
     background-color: #00000091;
@@ -17,7 +17,7 @@
 .bottomContainer {
     position: relative;
     width: 100%;
-    padding: 15px;
+    /* padding: 15px; */
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -30,4 +30,29 @@
     border-bottom:  1px white;
     box-sizing: border-box;
     margin: 0;
+    color: white;
+}
+
+.headingBottom {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomHeadingItem {
+    color: white;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 0 20px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+    .headingBottom {
+        display: none!important;
+    }
 }
