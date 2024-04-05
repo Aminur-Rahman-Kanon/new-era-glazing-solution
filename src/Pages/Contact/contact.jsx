@@ -17,7 +17,7 @@ const Contact = () => {
                 </div>
                 <div className={styles.headingItem}>
                     <h3 className={styles.headingItemH3}>CALL US</h3>
-                    <a href='tel:+447510268021' className={styles.headingItemTel}>+447510268021</a>
+                    <a href='tel:+447875531847' className={styles.headingItemTel}>+44 7875 531847</a>
                     <p className={styles.headingItemTelP}>Our lines are open Mon-Fri – 9am-5pm</p>
                 </div>
                 <div className={styles.headingItem}>

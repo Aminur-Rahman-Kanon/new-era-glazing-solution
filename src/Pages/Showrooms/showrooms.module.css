@@ -1,0 +1,116 @@
+.showroomContainer {
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+}
+
+.container1 {
+    width: 90%;
+    padding: 40px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container1Heading {
+    font-size: 2.8rem;
+    font-weight: 150;
+    color: rgb(51, 51, 51);
+    letter-spacing: 2px;
+    margin-bottom: unset;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.textContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container1P {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(62, 62, 62);
+}
+
+.container2 {
+    width: 95%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.showroom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showroomBgContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.showroomBg {
+    width: 100%;
+    filter: brightness(0.9);
+    transition: all 0.4s ease;
+}
+
+.showroomHeading {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.showroomBgContainer:hover .showroomBg {
+    transform: scale(1.03);
+}
+
+@media (max-width: 767px) {
+    .showroomContainer {
+        margin-top: 100px;
+    }
+
+    .container1Heading {
+        font-size: 2.2rem;
+    }
+
+    .container1 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container2 {
+        width: 100%;
+        padding: 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .showroomHeading {
+        font-size: 15px;
+    }
+}

@@ -36,6 +36,10 @@ const Homepage = () => {
                             <Link to={""} className={styles.headerLink}>Explore Our Products</Link>
                             <Link to={""} className={styles.headerLink}>Visit Our Showrooms</Link>
                         </div>
+                        <div className={styles.headerLinkContainer}>
+                            <Link to="/request-quote" className={styles.headerLink}>GET A PRICE</Link>
+                            <Link to="/brochure" className={styles.headerLink}>FREE BROCHURE</Link>
+                        </div>
                     </div>
                     <div data-aos="fade-up-left" className={styles.contactFormContainer}>
                         <h2 className={styles.contactFormHeading}>GET A PRICE</h2>
@@ -76,7 +80,7 @@ const Homepage = () => {
                     <p className={styles.section2P}>We understand that your home is more than just a home. We understand that it’s a big decision, which is why every market leading product that we make is designed with you in mind.</p>
                     <p className={styles.section2P}>Whether you’re looking to renovate your home with expansive new bi-folding doors, planning a property extension with slim-framed sliding doors, or embarking on a grand design project. We have the experience, infrastructure, expertise & bespoke British made product range that can put your mind at ease as we work together to create your dream home.</p>
                     <div className={styles.section2LinkContainer}>
-                        <Link className={styles.section2Link}>The Express Difference</Link>
+                        <Link className={styles.section2Link}>The New Age Difference</Link>
                         <Link className={styles.section2Link}>Our Completed Work</Link>
                     </div>
                 </div>

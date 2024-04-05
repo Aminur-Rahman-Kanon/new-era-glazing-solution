@@ -15,7 +15,7 @@
 .bgContainer {
     width: 100%;
     height: 100vh;
-    min-height: 650px;
+    min-height: 850px;
     background-image: url('../../Assets//background.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,6 @@
 }
 
 .headerH1 {
-    font-family: "DM Sans", sans-serif;
     text-align: center;
     color: white;
     font-size: 2.7rem;
@@ -60,12 +59,8 @@
     text-align: center;
     color: white;
     font-size: 17px;
-    font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    /*     font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal; */
 }
 
 .headerLinkContainer {
@@ -75,6 +70,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.headerLinkContainer:nth-of-type(2) {
+    display: none;
 }
 
 .headerLink {
@@ -87,7 +86,6 @@
     align-items: center;
     text-decoration: none;
     color: rgb(80, 79, 79);
-    font-family: "DM Sans", sans-serif;
     font-weight: 500;
     font-size: 15px;
     transition: all 0.5s linear;
@@ -111,7 +109,6 @@
 }
 
 .contactFormHeading {
-    font-family: "DM Sans", sans-serif;
     font-size: 18px;
     color: #595c5d;
     letter-spacing: 0px;
@@ -240,7 +237,6 @@
 }
 
 .section5P1 {
-    font-family: "DM Sans", sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: unset;
@@ -248,7 +244,6 @@
 }
 
 .section5P2 {
-    font-family: "DM Sans", sans-serif;
     line-height: 30px;
     color: #595c5d;
     margin-bottom: unset;
@@ -281,7 +276,6 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-family: "DM Sans", sans-serif;
 }
 
 .section5Link2Icon {
@@ -341,7 +335,6 @@
 }
 
 .section2P {
-    font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-size: 15px;
     letter-spacing: 1px;
@@ -360,7 +353,7 @@
     padding: 10px 30px;
     font-size: 14px;
     margin: 10px 0;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     border: 2px solid #d0e20d;
     font-weight: 600;
     color: rgb(80, 79, 79);
@@ -416,7 +409,6 @@
 }
 
 .section3P {
-    font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-size: 15px;
     margin: 10px 0;
@@ -494,7 +486,6 @@
 }
 
 .section6P1 {
-    font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-size: 15px;
     margin: 10px 0;;
@@ -541,7 +532,6 @@
 }
 
 .section6P2 {
-    font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-size: 15px;
     margin: 10px 0;
@@ -586,20 +576,17 @@
 
 .section7Heading1 {
     font-size: 2.5rem;
-    font-family: "DM Sans", sans-serif;
     font-weight: 100;
     letter-spacing: 1px;
 }
 
 .section7Heading2 {
     font-size: 1rem;
-    font-family: "DM Sans", sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
 }
 
 .section7P {
-    font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-size: 15px;
     margin: 10px 0;;
@@ -620,17 +607,20 @@
 }
 
 @media (max-width:1080px) {
-
-    .bgContainer {
-        background-attachment: unset;
-    }
-
     .headerContainer {
         width: 90%;
     }
 
     .headerLinkContainer {
         justify-content: center;
+    }
+
+    .headerLinkContainer:nth-of-type(1) {
+        display: none;
+    }
+
+    .headerLinkContainer:nth-of-type(2) {
+        display: flex;
     }
 
     .contactFormContainer {
@@ -751,7 +741,7 @@
     }
 
     .section7HeadingContainer {
-        padding: 10px;
+        padding: 25px;
         width: 95%;
         top: -30px;
         left: 0;
@@ -760,6 +750,12 @@
 }
 
 @media (max-width: 767px) {
+    .bgContainer {
+        height: auto;
+        background-attachment: unset;
+        min-height: 650px;
+    }
+
     .headerH1 {
         font-size: 2.5rem;
     }

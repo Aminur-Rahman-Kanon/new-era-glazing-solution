@@ -12,6 +12,8 @@ import RequestQuote from './Pages/RequestQoute/requestQuote';
 import Upload from './Pages/Upload/upload';
 import DisplayProduct from './Pages/DisplayProduct/displayProduct';
 import Contact from './Pages/Contact/contact';
+import OurProcess from './Pages/OurProcess/ourProcess';
+import Showrooms from './Pages/Showrooms/showrooms';
 
 function App() {
 
@@ -58,6 +60,8 @@ function App() {
               <Route path='/upload' element={<Upload />}/>
               <Route path='/products/:productId' element={<DisplayProduct />} />
               <Route path='/contact' element={<Contact />} />
+              <Route path='/our-process' element={<OurProcess />} />
+              <Route path='/showrooms' element={<Showrooms />} />
             </Routes>
             <Footer />
         </ContextApi.Provider>

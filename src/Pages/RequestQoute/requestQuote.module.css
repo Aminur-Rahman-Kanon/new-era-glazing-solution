@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: "DM Sans", sans-serif;
     align-items: center;
 }
 
@@ -21,14 +22,14 @@
 
 .topHeaderHeading {
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 200;
     color: rgb(89, 89, 89);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .topHeaderP {
     font-family: "DM Sans", sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300;
     color: rgb(64, 64, 64);
     /* letter-spacing: 1px; */
