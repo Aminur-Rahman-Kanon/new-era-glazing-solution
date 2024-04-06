@@ -877,6 +877,16 @@
 }
 
 @media (max-width: 767px) {
+    .header1 {
+        height: 650px;
+        min-height: unset;
+    }
+
+    .header1Heading {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .header1Banner2 {
         flex-direction: column;
     }

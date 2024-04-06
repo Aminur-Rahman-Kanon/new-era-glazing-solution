@@ -104,14 +104,14 @@ const Sidedrawer = () => {
                                         <a href='/request-quote' className={styles.itemLink}>GET A PRICE</a>
                                     </li>
                                     <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>VIRTUAL SHOWROOMS</a>
+                                        <a href='/showrooms' className={styles.itemLink}>OUR SHOWROOMS</a>
                                     </li>
                                     <li className={styles.item}>
-                                        <a className={styles.itemLink}>EXHIBITIONS & EVENTS</a>
+                                        <a href='/brochure' className={styles.itemLink}>DOWNLOAD FREE BROCHURE</a>
                                     </li>
-                                    <li className={styles.item}>
+                                    {/* <li className={styles.item}>
                                         <a href={''} className={styles.itemLink}>FREQUENTLY ASKED QUESTION</a>
-                                    </li>
+                                    </li> */}
                                     <li className={styles.item}>
                                         <a href='/contact' className={styles.itemLink}>CONTACT US</a>
                                     </li>
@@ -131,10 +131,7 @@ const Sidedrawer = () => {
                                         <a href='/our-process' className={styles.itemLink}>OUR PROCESS</a>
                                     </li>
                                     <li className={styles.item}>
-                                        <a href='/showrooms' className={styles.itemLink}>SHOWROOMS & EXHIBITIONS</a>
-                                    </li>
-                                    <li className={styles.item}>
-                                        <a className={styles.itemLink}>OUR TECHNOLOGY</a>
+                                        <a href='/our-technology' className={styles.itemLink}>OUR TECHNOLOGY</a>
                                     </li>
                                     <li className={styles.item}>
                                         <a href={''} className={styles.itemLink}>TESTIMONIAL & REVIEWS</a>
