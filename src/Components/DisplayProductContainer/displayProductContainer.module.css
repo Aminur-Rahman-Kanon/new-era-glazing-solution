@@ -902,6 +902,10 @@
         margin: 20px auto;
     }
 
+    .header3Middle {
+        grid-template-columns: 1fr;
+    }
+
     .header6Top {
         width: 100%;
         padding: 10px;
