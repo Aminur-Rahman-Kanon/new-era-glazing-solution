@@ -135,6 +135,7 @@
     margin: 20px auto;
     height: 40px;
     border: 1px solid #bece09;
+    border-radius: 0%;
     outline: none;
     background-color: #595c5d;
     color: #bece09;
