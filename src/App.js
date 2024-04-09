@@ -15,6 +15,7 @@ import Contact from './Pages/Contact/contact';
 import OurProcess from './Pages/OurProcess/ourProcess';
 import Showrooms from './Pages/Showrooms/showrooms';
 import OurTechnology from './Pages/OurTechnology/ourTechnology';
+import Products from './Pages/Products/products';
 
 function App() {
 
@@ -64,6 +65,7 @@ function App() {
               <Route path='/our-process' element={<OurProcess />} />
               <Route path='/showrooms' element={<Showrooms />} />
               <Route path='/our-technology' element={<OurTechnology />} />
+              <Route path='/product/:productId' element={<Products/>} />
             </Routes>
             <Footer />
         </ContextApi.Provider>

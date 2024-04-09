@@ -39,27 +39,26 @@
 .bottomHeader {
     width: 50%;
     padding: 30px 40px;
+    margin: 50px auto;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #b0bf09;
+    border: 1px solid #b0bf09;
 }
 
 @media (max-width: 1023px) {
+    .bottomHeader {
+        width: 90%;
+        padding: 20px;
+    }
+
     .topHeaderHeading {
         font-size: 1.5rem;
     }
 
     .topHeaderP {
         font-size: 16px;
-    }
-}
-
-@media (max-width: 767px) {
-    .bottomHeader {
-        width: 90%;
-        padding: 20px;
     }
 }
 

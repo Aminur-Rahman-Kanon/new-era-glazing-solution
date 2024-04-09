@@ -115,5 +115,25 @@ export const sliderHandler = ( el, styles) => {
             slider.className = styles.header7SliderContainer;
         })
     })
+}
 
+export const productSliderHandler = ( el, styles) => {
+    const element = document.querySelectorAll(`.${styles[el]}`);
+    console.log(element);
+
+    element.forEach(ele => {
+        const slider = ele.children[2];
+        const showBtn = ele.children[1].children[1];
+        const hideBtn = ele.children[2].children[4];
+    
+        showBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            slider.className = `${styles.header7SliderContainer} ${styles.show}`;
+        })
+    
+        hideBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            slider.className = styles.header7SliderContainer;
+        })
+    })
 }

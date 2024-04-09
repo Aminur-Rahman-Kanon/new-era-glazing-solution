@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styles from './homepage.module.css';
 import { Link } from 'react-router-dom';
 import ContactFormContainer from '../../Components/ContactFormContainer/contactFormContainer';
-import section2Bg from '../../Assets/section2_1_test.png';
+import section2Bg from '../../Assets/section2_1.jpg';
 import section3Bg from '../../Assets/section3_5.jpg';
 import section5_1 from '../../Assets/section5_1.jpg';
 import section5_2 from '../../Assets/section5_2.jpg';
@@ -34,7 +34,7 @@ const Homepage = () => {
                         bifold & sliding doors, entrance doors, windows, glass roofs & much more.</p>
                         <div className={styles.headerLinkContainer}>
                             <Link to={""} className={styles.headerLink}>Explore Our Products</Link>
-                            <Link to={""} className={styles.headerLink}>Visit Our Showrooms</Link>
+                            <Link to='/showrooms' className={styles.headerLink}>Visit Our Showrooms</Link>
                         </div>
                         <div className={styles.headerLinkContainer}>
                             <Link to="/request-quote" className={styles.headerLink}>GET A PRICE</Link>

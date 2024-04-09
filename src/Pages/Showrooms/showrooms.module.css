@@ -31,6 +31,7 @@
 
 .textContainer {
     width: 100%;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -55,6 +56,7 @@
 }
 
 .showroom {
+    text-decoration: none;
     width: 100%;
     display: flex;
     justify-content: center;

@@ -8,10 +8,7 @@ import { sliderHandler } from '../../Utilities/utilities';
 
 const DisplayProductContainer = ({ product }) => {
 
-    const [sliderBtn, setSliderBtn] = useState(false);
-
     let displayProduct = null;
-    console.log(product);
 
     useEffect(() => {
         if (product) {

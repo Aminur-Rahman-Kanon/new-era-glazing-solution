@@ -28,6 +28,11 @@ import p21 from '../Assets/products/p21.jpg';
 import p22 from '../Assets/products/p22.jpg';
 import p23 from '../Assets/products/p23.jpg';
 import p24 from '../Assets/products/p24.jpg';
+import video from '../Assets/videos/bifold.mp4';
+import shwroom1 from '../Assets/showrooms/showrooms_1.jpg';
+import shwroom2 from '../Assets/showrooms/showrooms_2.jpg';
+import shwroom3 from '../Assets/showrooms/showrooms_3.jpg';
+import shwroom4 from '../Assets/showrooms/showrooms_4.jpg';
 
 export const items = [
     'windows', 'doors', 'conservatories', 'porches', 'orangeries', 'rooftrim', 'garage doors', 'extensions', 'cladding'
@@ -37,32 +42,32 @@ export const popularProducts = [
     {
         title: 'Bi-Folding Doors',
         img: biFoldingDoors,
-        link: ''
+        link: '/product/Aluminium Bi-Folding Doors'
     },
     {
         title: 'Sliding Doors',
         img: slidingDoors,
-        link: ''
+        link: '/product/External Sliding Doors'
     },
     {
         title: 'Aluminium Windows',
         img: aluminiumWindows,
-        link: ''
+        link: '/product/Aluminium Windows'
     },
     {
         title: 'Distinctive Entrance Doors',
         img: entranceDoors,
-        link: ''
+        link: '/product/Aluminium Front Doors'
     },
     {
         title: 'Glass Roofing Systems',
         img: glassRoofing,
-        link: ''
+        link: '/product/Glass Roof Systems'
     },
     {
         title: 'Steel Look Roors & Windows',
         img: steelDoors,
-        link: ''
+        link: '/product/Bespoke Glass Solutions'
     },
 ]
 
@@ -99,42 +104,54 @@ export const products = [
         heading: 'Aluminium Bi-Folding Doors',
         product: [
             'XP View', 'XP88', 'XP10', 'Steel Look Bifold Doors'
-        ]
+        ],
+        img: [p1, p2, p3],
+        video
     },
     {
         id: 2,
         heading: 'External Sliding Doors',
         product: [
             'XP Glide', 'XP Slide 25', 'XP Slide LS25', 'XP Infinite', 'Lift & Slide Doors', 'Double Sliding Patio Doors', 'Triple-Track Sliding Patio Doors'
-        ]
+        ],
+        img: [p4, p5, p6],
+        video
     },
     {
         id: 3,
         heading: 'Aluminium Windows',
         product: [
             'Aluminium Casement Windows', 'Aluminium Bay Windows', 'Tilt And Turn Windows', 'Aluminium Curtain Walling', 'Shaped Windows'
-        ]
+        ],
+        img: [p7, p8, p9],
+        video
     },
     {
         id: 4,
         heading: 'Aluminium Front Doors',
         product: [
             'Premium Front Doors', 'XP77 Entrance Doors'
-        ]
+        ],
+        img: [p10, p11, p12],
+        video
     },
     {
         id: 5,
         heading: 'Glass Roof Systems',
         product: [
             'Roof Lantern Skylights', 'Glass Lean-To Roofing', 'Flat Roof Skylights', 'Pyramid Roof Lanterns'
-        ]
+        ],
+        img: [p13, p14, p15],
+        video
     },
     {
         id: 6,
         heading: 'Bespoke Glass Solutions',
         product: [
             'Glass Balustrade Balcony', 'Glass Entrance Artiums'
-        ]
+        ],
+        img: [p16, p17, p18],
+        video
     }
 ]
 
@@ -167,4 +184,39 @@ export const productImg = {
 
 export const brochureItems = [
     'BI-FOLDS', 'SLIDING DOORS', 'ROOFS', 'WINDOWS', 'HORIZON WINDOWS', 'FRONT DOORS', 'SUMMARY OF ALL PRODUCTS'
+]
+
+export const showrooms = [
+    {
+        id: 1,
+        img: shwroom1,
+        name: 'leeds showroom',
+        phone: '+44 7875 531847',
+        address: 'Unit 4, Phoenix Business Centre, Spur Road, Chichester PO19 8PN',
+        openingHours: '9am - 5pm'
+    },
+    {
+        id: 2,
+        img: shwroom2,
+        name: 'weybridge showroom',
+        phone: '+44 7875 531847',
+        address: 'Unit 4, Phoenix Business Centre, Spur Road, Chichester PO19 8PN',
+        openingHours: '9am - 5pm'
+    },
+    {
+        id: 3,
+        img: shwroom3,
+        name: 'romford showroom',
+        phone: '+44 7875 531847',
+        address: 'Unit 4, Phoenix Business Centre, Spur Road, Chichester PO19 8PN',
+        openingHours: '9am - 5pm'
+    },
+    {
+        id: 4,
+        img: shwroom4,
+        name: 'glasgow showroom',
+        phone: '+44 7875 531847',
+        address: 'Unit 4, Phoenix Business Centre, Spur Road, Chichester PO19 8PN',
+        openingHours: '9am - 5pm'
+    }
 ]

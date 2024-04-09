@@ -58,7 +58,7 @@
 
     .section8HeadingContainer {
         width: 95%;
-        border: 4px solid #baca0a;
+        border-top: 5px solid #baca0a;
         top: -30px;
         left: 0;
     }

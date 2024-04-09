@@ -7,6 +7,7 @@ import SidedrawerPortal from '../SidedrawerPortal/sidedrawerPortal';
 import SocialLinkContainer from '../SocialLinkContainer/socialLinkContainer';
 import { displayNestedItemHandler } from '../../Utilities/utilities';
 import ProductSelector from '../ProductSelector/productSelector';
+import { products } from '../../Data/data';
 import Logo from '../Logo/logo';
 
 const Sidedrawer = () => {
@@ -19,7 +20,7 @@ const Sidedrawer = () => {
         const el = document.querySelectorAll(`.${styles.itemContainer}`);
         const wrapper2 = document.querySelector(`.${styles.wrapper2}`);
         displayNestedItemHandler(el, wrapper2, styles);
-    }, [])
+    }, []);
 
     return (
         <SidedrawerPortal sidedrawer={sidedrawer}>
@@ -67,27 +68,9 @@ const Sidedrawer = () => {
                                 </div>
                                 <h3 className={styles.itemHeading}>OUR PRODUCTS</h3>
                                 <ul className={styles.items}>
-                                    <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>ALUMINIUM BI-FOLDING DOORS</a>
-                                    </li>
-                                    <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>EXTERNAL SLIDING DOORS</a>
-                                    </li>
-                                    <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>ALUMINIUM FRONT DOORS</a>
-                                    </li>
-                                    <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>ALUMINIUM WINDOWSS</a>
-                                    </li>
-                                    <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>ALUMINIUM FRENCH DOORS</a>
-                                    </li>
-                                    <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>GLASS ROOF SYSTEMS</a>
-                                    </li>
-                                    <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>BESPOKE GLASS SOLUTIONS</a>
-                                    </li>
+                                    {products &&  products.map(prd => <li key={prd.id} className={styles.item}>
+                                        <a href={`/product/${prd.heading}`} className={styles.itemLink}>{prd.heading}</a>
+                                    </li>)}
                                 </ul>
                             </div>
                         </div>
@@ -109,9 +92,6 @@ const Sidedrawer = () => {
                                     <li className={styles.item}>
                                         <a href='/brochure' className={styles.itemLink}>DOWNLOAD FREE BROCHURE</a>
                                     </li>
-                                    {/* <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>FREQUENTLY ASKED QUESTION</a>
-                                    </li> */}
                                     <li className={styles.item}>
                                         <a href='/contact' className={styles.itemLink}>CONTACT US</a>
                                     </li>
