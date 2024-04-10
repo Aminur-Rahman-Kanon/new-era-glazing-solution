@@ -76,7 +76,7 @@ const Homepage = () => {
                     <img src={section2Bg} alt="glazing door" className={styles.section2Bg} />
                 </div>
                 <div data-aos="fade-left" className={styles.section2HeaderContainer}>
-                    <h2 className={styles.section2Heading}>SEE THE<br className={styles.br}/> DIFFERENCE</h2>
+                    <h2 className={styles.section2Heading}>SEE THE DIFFERENCE</h2>
                     <p className={styles.section2P}>We understand that your home is more than just a home. We understand that it’s a big decision, which is why every market leading product that we make is designed with you in mind.</p>
                     <p className={styles.section2P}>Whether you’re looking to renovate your home with expansive new bi-folding doors, planning a property extension with slim-framed sliding doors, or embarking on a grand design project. We have the experience, infrastructure, expertise & bespoke British made product range that can put your mind at ease as we work together to create your dream home.</p>
                     <div className={styles.section2LinkContainer}>
