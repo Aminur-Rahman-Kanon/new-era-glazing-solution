@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Topbar from './Components/Topbar/topbar';
@@ -7,15 +7,16 @@ import Footer from './Components/Footer/footer';
 import Sidedrawer from './Components/Sidedrawer/sidedrawer';
 import ContextApi from './Components/ContextApi/contextApi';
 import ProductContainer from './Components/ProductContainer/productContainer';
-import Brochure from './Pages/Brochure/brochure';
-import RequestQuote from './Pages/RequestQoute/requestQuote';
-import Upload from './Pages/Upload/upload';
-import DisplayProduct from './Pages/DisplayProduct/displayProduct';
-import Contact from './Pages/Contact/contact';
-import OurProcess from './Pages/OurProcess/ourProcess';
-import Showrooms from './Pages/Showrooms/showrooms';
-import OurTechnology from './Pages/OurTechnology/ourTechnology';
-import Products from './Pages/Products/products';
+import Spinner from './Components/Spinner/spinner';
+import ProductSpinner from './Components/ProductSpinner/productSpinner';
+const Brochure = lazy(() => import('./Pages/Brochure/brochure'));
+const RequestQuote = lazy(() => import('./Pages/RequestQoute/requestQuote'));
+const DisplayProduct = lazy(() => import('./Pages/DisplayProduct/displayProduct'));
+const Contact = lazy(() => import('./Pages/Contact/contact'));
+const OurProcess = lazy(() => import('./Pages/OurProcess/ourProcess'));
+const Showrooms = lazy(() => import('./Pages/Showrooms/showrooms'));
+const OurTechnology = lazy(() => import('./Pages/OurTechnology/ourTechnology'));
+const Products = lazy(() => import('./Pages/Products/products'));
 
 function App() {
 
@@ -57,15 +58,30 @@ function App() {
             <ProductContainer />
             <Routes>
               <Route path='/' element={<Homepage />}/>
-              <Route path='/brochure' element={<Brochure />} />
-              <Route path='/request-quote' element={<RequestQuote /> }/>
-              <Route path='/upload' element={<Upload />}/>
-              <Route path='/products/:productId' element={<DisplayProduct />} />
-              <Route path='/contact' element={<Contact />} />
-              <Route path='/our-process' element={<OurProcess />} />
-              <Route path='/showrooms' element={<Showrooms />} />
-              <Route path='/our-technology' element={<OurTechnology />} />
-              <Route path='/product/:productId' element={<Products/>} />
+              <Route path='/brochure' element={<Suspense fallback={<Spinner spinner={true}/>}>
+                <Brochure />
+              </Suspense>} />
+              <Route path='/request-quote' element={<Suspense fallback={<Spinner spinner={true}/>}>
+                <RequestQuote />
+              </Suspense>}/>
+              <Route path='/products/:productId' element={<Suspense fallback={<ProductSpinner spinner={true} />}>
+                <DisplayProduct />
+              </Suspense>} />
+              <Route path='/contact' element={<Suspense fallback={<Spinner spinner={true}/>}>
+                <Contact/>
+              </Suspense>} />
+              <Route path='/our-process' element={<Suspense fallback={<Spinner spinner={true}/>}>
+                <OurProcess />
+              </Suspense>} />
+              <Route path='/showrooms' element={<Suspense fallback={<Spinner spinner={true}/>}>
+                <Showrooms />
+              </Suspense>} />
+              <Route path='/our-technology' element={<Suspense fallback={<Spinner spinner={true}/>}>
+                <OurTechnology />
+              </Suspense>} />
+              <Route path='/product/:productId' element={<Suspense fallback={<Spinner spinner={true}/>}>
+                <Products />
+              </Suspense>} />
             </Routes>
             <Footer />
         </ContextApi.Provider>

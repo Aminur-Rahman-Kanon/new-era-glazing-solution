@@ -1,0 +1,25 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(211, 211, 211, 0.56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loader 5s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        background-color: rgb(156, 156, 156);
+    }
+
+    50% {
+        background-color: rgb(211, 211, 211);
+    }
+
+    100% {
+        background-color: rgb(156, 156, 156);
+
+    }
+}

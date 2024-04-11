@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "DM Sans", sans-serif;
+    overflow: hidden;
 }
 
 .productContainer {
@@ -71,7 +73,7 @@
 
 .header1H2 {
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 150;
     letter-spacing: 2px;
     margin: 10px 0;
 }
@@ -108,7 +110,7 @@
     width: 100%;
     height: 100%;
     margin: 100px auto;
-    padding: 30px;
+    padding: 40px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -117,8 +119,8 @@
 
 .header2Heading {
     position: relative;
-    width: 45%;
-    padding: 50px;
+    width: 40%;
+    padding: 40px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -130,7 +132,7 @@
 }
 
 .header2BgContainer {
-    width: 55%;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -144,10 +146,12 @@
 }
 
 .header2H2 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 150;
     color: #bece09;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .header2Lists {
@@ -172,6 +176,7 @@
 
 .header3 {
     width: 100%;
+    max-width: 1600px;
     display: flex;
     padding: 20px;
     box-sizing: border-box;
@@ -190,20 +195,22 @@
 }
 
 .header3H2 {
-    font-size: 2.5rem;
-    font-weight: 100;
+    font-size: 2.8rem;
+    font-weight: 150;
     text-align: center;
     font-family: "DM Sans", sans-serif;
     letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .header3P {
     font-family: "DM Sans", sans-serif;
     font-size: 15px;
     font-weight: 200;
-    letter-spacing: 1px ;
     line-height: 25px;
-
+    margin: 0;
+    margin-top: 10px;
 }
 
 .header3Middle {
@@ -211,25 +218,42 @@
     padding: 20px;
     margin: 20px auto;
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    place-content: center;
-    place-items: center;
+    align-items: flex-start;
     font-family: "DM Sans", sans-serif;
 }
 
+.iconContainer1, .iconContainer2 {
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header3MiddleIconContainer {
-    width: 100%;
-    height: 100%;
+    width: 125px;
+    height: 200px;
     padding: 10px;
+    margin: 10px 50px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+.iconContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .header3Icon {
@@ -238,9 +262,8 @@
 }
 
 .header3MiddleText {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
-    letter-spacing: 1px;
     text-align: center;
     margin-top: 20px;
 }
@@ -296,6 +319,8 @@
 .header4 {
     width: 100%;
     margin: 50px auto;
+    padding: 40px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -304,23 +329,23 @@
 
 .header4Heading {
     position: relative;
-    width: 50%;
+    width: 40%;
     padding: 40px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border-top: 4px solid #bece09;
-    border-bottom: 4px solid #bece09;
-    border-right: 4px solid #bece09;
     background-color: white;
+    z-index: 1;
 }
 
 .header4H2 {
-    font-size: 2.5rem;
-    font-weight: 100;
-    letter-spacing: 3px;
+    font-size: 2.8rem;
+    font-weight: 150;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .header4Lists {
@@ -341,7 +366,7 @@
 }
 
 .header4bgContainer {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -367,10 +392,12 @@
 }
 
 .header6H2 {
-    font-size: 3rem;
-    font-weight: 100;
+    font-size: 2.8rem;
+    font-weight: 150;
     letter-spacing: 2px;
     text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .header6Top {
@@ -464,7 +491,7 @@
 
 .header7BannerContainer {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 0;
     z-index: 1;
     width: 100%;
@@ -500,8 +527,8 @@
 
 .header7BannercloseBtn {
     position: absolute;
-    bottom: 20%;
-    right: 30px;
+    bottom: 10%;
+    right: 20px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -658,11 +685,12 @@
 }
 
 .header9H2 {
-    font-size: 2.5rem;
-    font-weight: 200;
+    font-size: 2.8rem;
+    font-weight: 150;
     letter-spacing: 2px;
     color: #bece09;
-    margin: 20px 0;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .header9Lists {
@@ -762,8 +790,8 @@
         width: 100%;
     }
 
-    .header3Middle {
-        grid-template-columns: repeat(2, 1fr);
+    .header3MiddleIconContainer {
+        margin: 10px 20px;
     }
 
     .header3Bottom {
@@ -776,6 +804,7 @@
     }
 
     .header4 {
+        padding: 0;
         flex-direction: column-reverse;
     }
 
@@ -783,7 +812,7 @@
         width: 95%;
         top: -30px;
         left: 0;
-        border-left: 4px solid #bece09;
+        border-top: 4px solid #bece09;
     }
 
     .header4bgContainer {
@@ -902,8 +931,18 @@
         margin: 20px auto;
     }
 
+    .header2H2, .header3H2, .header4H2, .header6H2, .header9H2 {
+        font-size: 2.2rem;
+    }
+
     .header3Middle {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iconContainer1, .iconContainer2 {
+        width: 100%;
+        justify-content: space-evenly;
     }
 
     .header6Top {
@@ -921,6 +960,14 @@
         padding: 10px;
     }
 
+    .header7BannerContainer {
+        bottom: 5%;
+    }
+
+    .header7BannercloseBtn {
+        bottom: 10%;
+    }
+
     .header8H3 {
         font-size: 1rem;
     }
@@ -936,8 +983,22 @@
 }
 
 @media (max-width: 450px) {
+    .header2H2, .header3H2, .header4H2, .header6H2, .header9H2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
     .header2Heading {
         padding: 20px;
+    }
+
+    .header2Lists {
+        margin: 0 auto;
+    }
+
+    .header2List {
+        font-size: 13px;
+        margin: 10px auto;
     }
 
     .header3 {
@@ -948,8 +1009,20 @@
         padding: 0;
     }
 
+    .header3MiddleIconContainer {
+        height: auto;
+    }
+
+    .header3P {
+        font-size: 13px;
+    }
+
     .header4Heading {
         padding: 20px;
+    }
+
+    .header6Imgs {
+        gap: 30px;
     }
 
     .header9Color {
@@ -959,6 +1032,12 @@
 
     .header4List {
         font-size: 13px;
+    }
+
+
+    .header7BannerH2 {
+        font-size: 1.2rem;
+        font-weight: 300;
     }
 
     .header9Heading {

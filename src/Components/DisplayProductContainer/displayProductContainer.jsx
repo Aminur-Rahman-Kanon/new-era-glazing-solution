@@ -1,10 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import styles from './displayProductContainer.module.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRulerCombined, faEarListen, faWater, faAward, faCircleNotch } from '@fortawesome/free-solid-svg-icons';
+import anniversary from '../../Assets/icons/anniversary.png';
+import ear from '../../Assets/icons/ear.png';
+import scale from '../../Assets/icons/scale.png';
+import wave from '../../Assets/icons/wave.png';
 import ImageSlideshow from '../ImageSlideshow/imageSlideshow';
 import { sliderHandler } from '../../Utilities/utilities';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const DisplayProductContainer = ({ product }) => {
 
@@ -13,6 +19,7 @@ const DisplayProductContainer = ({ product }) => {
     useEffect(() => {
         if (product) {
             sliderHandler('header7Item', styles);
+            Aos.init({ duration: 2000 });
         }
     }, [])
 
@@ -32,7 +39,7 @@ const DisplayProductContainer = ({ product }) => {
                     </div>
                 </div>
                 <div className={styles.header2}>
-                    <div className={styles.header2Heading}>
+                    <div data-aos="fade-right" className={styles.header2Heading}>
                         <h2 className={styles.header2H2}>{product.product.header2.heading}</h2>
                         <ul className={styles.header2Lists}>
                             {product.product.header2.title.map((li, idx) => <li key={idx} className={styles.header2List}>{li}</li>)}
@@ -48,21 +55,33 @@ const DisplayProductContainer = ({ product }) => {
                         <p className={styles.header3P}>{product.product.header3.title}</p>
                     </div>
                     <div className={styles.header3Middle}>
-                        <div className={styles.header3MiddleIconContainer}>
-                            <FontAwesomeIcon icon={faAward} className={styles.header3Icon} />
-                            <p className={styles.header3MiddleText}>A comprehensive 10 year guarantee</p>
+                        <div data-aos="fade-right" className={styles.iconContainer1}>
+                            <div className={styles.header3MiddleIconContainer}>
+                                <div className={styles.iconContainer}>
+                                    <img src={anniversary} alt='10 years gaurantee' className={styles.icon} />
+                                </div>
+                                <p className={styles.header3MiddleText}>A comprehensive 10 year guarantee</p>
+                            </div>
+                            <div className={styles.header3MiddleIconContainer}>
+                                <div className={styles.iconContainer}>
+                                    <img src={wave} alt='Exceeding thermal regulation' className={styles.icon} />
+                                </div>
+                                <p className={styles.header3MiddleText}>Exceeding thermal regulation</p>
+                            </div>
                         </div>
-                        <div className={styles.header3MiddleIconContainer}>
-                            <FontAwesomeIcon icon={faWater} className={styles.header3Icon} />
-                            <p className={styles.header3MiddleText}>Exceeding thermal regulation</p>
-                        </div>
-                        <div className={styles.header3MiddleIconContainer}>
-                            <FontAwesomeIcon icon={faEarListen} className={styles.header3Icon} />
-                            <p className={styles.header3MiddleText}>Sound reduction upto class 4</p>
-                        </div>
-                        <div className={styles.header3MiddleIconContainer}>
-                            <FontAwesomeIcon icon={faRulerCombined} className={styles.header3Icon} />
-                            <p className={styles.header3MiddleText}>Expert & fully insured fitting team</p>
+                        <div data-aos="fade-left" className={styles.iconContainer2}>
+                            <div className={styles.header3MiddleIconContainer}>
+                                <div className={styles.iconContainer}>
+                                    <img src={ear} alt='Sound reduction upto class 4' className={styles.icon} />
+                                </div>
+                                <p className={styles.header3MiddleText}>Sound reduction upto class 4</p>
+                            </div>
+                            <div className={styles.header3MiddleIconContainer}>
+                                <div className={styles.iconContainer}>
+                                    <img src={scale} alt='Expert & fully insured fitting team' className={styles.icon} />
+                                </div>
+                                <p className={styles.header3MiddleText}>Expert & fully insured fitting team</p>
+                            </div>
                         </div>
                     </div>
                     <div className={styles.header3Bottom}>
@@ -83,7 +102,7 @@ const DisplayProductContainer = ({ product }) => {
                             {product.product.header4.features.map((li, idx) => <li key={idx} className={styles.header4List}>{li}</li>)}
                         </ul>
                     </div>
-                    <div className={styles.header4bgContainer}>
+                    <div data-aos="fade-left" className={styles.header4bgContainer}>
                         <img src={product.product.header4.bg} alt="new era glazing solution ltd" className={styles.header4Bg}/>
                     </div>
                 </div>
@@ -98,19 +117,19 @@ const DisplayProductContainer = ({ product }) => {
                         </ul>
                     </div>
                     <div className={styles.header6Imgs}>
-                        <div className={styles.header6ImgContainer}>
+                        <div data-aos="fade-right" className={styles.header6ImgContainer}>
                             <img src={product.product.header6.img[0]} alt="new era glazing solution" className={styles.header6Img} />
                             <span className={styles.header6ImgTitle}>Create a seamless transition from inside to out.</span>
                         </div>
-                        <div className={styles.header6ImgContainer}>
+                        <div data-aos="fade-right" className={styles.header6ImgContainer}>
                             <img src={product.product.header6.img[1]} alt="new era glazing solution" className={styles.header6Img} />
                             <span className={styles.header6ImgTitle}>Fully adaptable and adjustable door system.</span>
                         </div>
-                        <div className={styles.header6ImgContainer}>
+                        <div data-aos="fade-right" className={styles.header6ImgContainer}>
                             <img src={product.product.header6.img[2]} alt="new era glazing solution" className={styles.header6Img} />
                             <span className={styles.header6ImgTitle}>Three varied threshold options</span>
                         </div>
-                        <div className={styles.header6ImgContainer}>
+                        <div data-aos="fade-right" className={styles.header6ImgContainer}>
                             <img src={product.product.header6.img[3]} alt="new era glazing solution" className={styles.header6Img} />
                             <span className={styles.header6ImgTitle}>Solid stainless steel rail guide for the steel rollers to run.</span>
                         </div>
@@ -118,7 +137,7 @@ const DisplayProductContainer = ({ product }) => {
                 </div>
                 <div className={styles.header7}>
                     {product.product.header7.img.map((item, idx) => 
-                        <div key={idx} className={styles.header7Item}>
+                        <div data-aos="fade-right" key={idx} className={styles.header7Item}>
                             <div className={styles.header7BgContainer}>
                                 <img src={item.img} alt={item.title} className={styles.header7Bg}/>
                             </div>
@@ -149,7 +168,7 @@ const DisplayProductContainer = ({ product }) => {
                         <div className={styles.header9BgContainer}>
                             <img src={product.product.header9.bg} alt={product.product.header9.heading} className={styles.header9Bg}/>
                         </div>
-                        <div className={styles.header9Heading}>
+                        <div data-aos="fade-left" className={styles.header9Heading}>
                             <h2 className={styles.header9H2}>{product.product.header9.heading}</h2>
                             <ul className={styles.header9Lists}>
                                 {product.product.header9.title.map((li, idx) => <li key={idx} className={styles.header9Li}>{li}</li>)}
@@ -159,7 +178,7 @@ const DisplayProductContainer = ({ product }) => {
                     <div className={styles.header9Bottom}>
                         <p className={styles.header9P}>THERE ARE ALSO UP TO 200 RAL COLOURS TO CHOOSE FROM INCLUDING SLIGHT DISCOUNTS FOR RAL 9007, RAL 7021 & RAL 7032 DUE TO THEIR POPULARITY.</p>
                         <ul className={styles.header9ColorLists}>
-                            {product.product.header9.color.map(clr => <li key={clr.title} className={styles.header9List}>
+                            {product.product.header9.color.map(clr => <li data-aos="fade-right" key={clr.title} className={styles.header9List}>
                                 <span className={styles.header9Color} style={{backgroundColor: `${clr.value}`}}></span>
                                 <span className={styles.header9ColorTitle}>{clr.title}</span>
                             </li>)}

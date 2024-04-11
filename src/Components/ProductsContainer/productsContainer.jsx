@@ -147,7 +147,7 @@ const ProductsContainer = ({ product }) => {
                 </div>
                 :
                 <div>
-                    No product
+                    
                 </div>
             }
         </div>
