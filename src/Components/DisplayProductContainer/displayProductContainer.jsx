@@ -19,7 +19,7 @@ const DisplayProductContainer = ({ product }) => {
     useEffect(() => {
         if (product) {
             sliderHandler('header7Item', styles);
-            Aos.init({ duration: 2000 });
+            Aos.init({ duration: 2000, once: true });
         }
     }, [])
 
