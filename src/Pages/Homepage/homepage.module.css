@@ -221,7 +221,7 @@
 .section5HeadingContainer {
     position: relative;
     width: 45%;
-    padding: 20px;
+    padding: 2rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -236,7 +236,7 @@
     font-weight: 200;
     letter-spacing: 1px;
     margin-bottom: unset;
-    margin: o;
+    margin: 0;
     margin-bottom: 40px;
 }
 
@@ -687,10 +687,6 @@
         justify-content: center;
     }
 
-    .section5Heading {
-        font-size: 2rem;
-    }
-
     .section2 {
         flex-direction: column;
     }
@@ -702,7 +698,7 @@
     .section2HeaderContainer {
         width: 95%;
         top: -40px;
-        padding: 20px;
+        padding: 2rem;
         box-sizing: border-box;
         border-top: 5px solid #bece09;
         left: 0;
@@ -754,7 +750,6 @@
     }
 
     .section7HeadingContainer {
-        padding: 25px;
         width: 95%;
         top: -30px;
         left: 0;
@@ -783,8 +778,12 @@
         margin: 20px auto;
     }
 
-    .section2Heading {
-        font-size: 1.8rem;
+    .section3HeadingContainer, .section6HeadingContainer, .section7HeadingContainer {
+        padding: 2rem;
+    }
+
+    .section2Heading, .section3Heading, .section5Heading, .section6Heading1, .section6Heading2, .section7Heading1 {
+        font-size: 2rem;
     }
 
     .section3 {
@@ -808,16 +807,8 @@
         margin: 20px auto;
     }
 
-    .section6Heading1, .section6Heading2 {
-        font-size: 1.5rem;
-    }
-
     .section7 {
         padding: 0;
-    }
-
-    .section7Heading1 {
-        font-size: 2rem;
     }
 
     .section8 {
@@ -847,10 +838,6 @@
         margin: 10px auto;
     }
 
-    .section3Heading {
-        font-size: 1.5rem;
-    }
-
     .section3P {
         font-size: 14px;
     }
@@ -859,7 +846,12 @@
         margin: 30px auto;
     }
 
+    .section3HeadingContainer, .section6HeadingContainer, .section7HeadingContainer {
+        padding: 1.5rem;
+    }
+
     .section2Heading, .section3Heading, .section5Heading, .section6Heading1, .section6Heading2, .section7Heading1 {
+        font-size: 1.5rem;
         text-align: center;
     }
 
@@ -896,9 +888,5 @@
 
     .section7HeadingContainer {
         padding: 20px;
-    }
-
-    .section7Heading1 {
-        font-size: 1.5rem;
     }
 }

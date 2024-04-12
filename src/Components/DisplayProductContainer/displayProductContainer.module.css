@@ -515,6 +515,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    box-sizing: border-box;
     border: 1px solid #bece09;
     background-color: #bece09;
     color: rgb(50, 50, 50);
@@ -851,6 +852,7 @@
     .header7BannerBtn, .header7BannercloseBtn {
         height: 40px;
         width: 40px;
+        border-radius: 50%;
         font-size: 1.5rem;
     }
 

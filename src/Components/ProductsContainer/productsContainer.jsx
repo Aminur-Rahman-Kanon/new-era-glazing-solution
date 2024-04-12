@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styles from './productsContainer.module.css';
 import { products, showrooms } from '../../Data/data';
-import { productSliderHandler } from '../../Utilities/utilities';
 import { Link } from 'react-router-dom';
 import ImageSlideshow from '../ImageSlideshow/imageSlideshow';
+import ShowroomsContainer from '../ShowroomsContainer/showroomsContainer';
 
 const ProductsContainer = ({ product }) => {
 
@@ -17,10 +17,6 @@ const ProductsContainer = ({ product }) => {
             }
         }
     }, [])
-    
-    useEffect(() => {
-        productSliderHandler('header7Item', styles);
-    }, [productId])
 
     return (
         <div className={styles.productsMain}>
@@ -49,8 +45,8 @@ const ProductsContainer = ({ product }) => {
                     </section>
                     <section className={styles.section2}>
                         <div className={styles.videoContainer}>
-                            <video width='100%' height='auto' controls>
-                                <source src={productId.video} type='video/mp4'/>
+                            <video width='100%' height='auto' controls playsInline>
+                                <source src={`${productId.video}#t=0.001`} type='video/mp4'/>
                                 Your browser doens't support video
                             </video>
                         </div>
@@ -113,36 +109,7 @@ const ProductsContainer = ({ product }) => {
                         </div>
                     </section>
                     <div className={styles.header7}>
-                        <h2 className={styles.headingDark}>VISIT OUR SHOWROOMS</h2>
-                        <div className={styles.showroomContainer}>
-                            {showrooms.map(srm => 
-                                <div key={srm.id} className={styles.header7Item}>
-                                    <div className={styles.header7BgContainer}>
-                                        <img src={srm.img} alt={srm.name} className={styles.header7Bg}/>
-                                    </div>
-                                    <div className={styles.header7BannerContainer}>
-                                        <h2 className={styles.header7BannerH2}>{srm.name}</h2>
-                                        <button className={styles.header7BannerBtn}>+</button>
-                                    </div>
-                                    <div className={styles.header7SliderContainer}>
-                                        <h2 className={styles.header7SliderH2}>{srm.name}</h2>
-                                        <div className={styles.sliderItem}>
-                                            <span className={styles.header7Label}>Address</span>
-                                            <p className={styles.header7SliderP}>{srm.address}</p>
-                                        </div>
-                                        <div className={styles.sliderItem}>
-                                            <span className={styles.header7Label}>Phone</span>
-                                            <p className={styles.header7SliderP}>{srm.phone}</p>
-                                        </div>
-                                        <div className={styles.sliderItem}>
-                                            <span className={styles.header7Label}>Opening Hours</span>
-                                            <p className={styles.header7SliderP}>{srm.openingHours}</p>
-                                        </div>
-                                        <button className={styles.header7BannercloseBtn}>-</button>
-                                    </div>
-                                </div>
-                            )}
-                        </div>
+                        <ShowroomsContainer />
                     </div>
                 </div>
                 :

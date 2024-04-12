@@ -78,6 +78,10 @@
     display: none;
 }
 
+.control-dots {
+    top: 0!important;
+}
+
 .carousel .control-dots .dot {
     background: #b7c708!important;
 }
@@ -88,6 +92,12 @@
 
 .control-prev::before {
     border-right: 8px solid #626262!important;
+}
+
+@media (min-width: 960px) {
+    .control-dots {
+        top: 0!important;
+    }
 }
 
 @media (max-width: 767px) {

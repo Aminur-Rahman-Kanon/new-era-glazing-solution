@@ -1,9 +1,6 @@
 import React from 'react';
 import styles from './showrooms.module.css';
-import sr1 from '../../Assets/showrooms/showrooms_1.jpg';
-import sr2 from '../../Assets/showrooms/showrooms_2.jpg';
-import sr3 from '../../Assets/showrooms/showrooms_3.jpg';
-import sr4 from '../../Assets/showrooms/showrooms_4.jpg';
+import ShowroomsContainer from '../../Components/ShowroomsContainer/showroomsContainer';
 
 const Showrooms = () => {
     return (
@@ -22,41 +19,7 @@ const Showrooms = () => {
                 </div>
             </section>
             <section className={styles.container2}>
-                <div className={styles.showroom}>
-                    <div className={styles.showroomBgContainer}>
-                        <img src={sr1} alt="showrrom" className={styles.showroomBg} />
-                        <span className={styles.showroomHeading}>
-                            LEEDS SHOWROOM
-                        </span>
-                    </div>
-                </div>
-
-                <div className={styles.showroom}>
-                    <div className={styles.showroomBgContainer}>
-                        <img src={sr2} alt="showrrom" className={styles.showroomBg} />
-                        <span className={styles.showroomHeading}>
-                            WEYBRIDGE SHOWROOM
-                        </span>
-                    </div>
-                </div>
-
-                <div className={styles.showroom}>
-                    <div className={styles.showroomBgContainer}>
-                        <img src={sr3} alt="showrrom" className={styles.showroomBg} />
-                        <span className={styles.showroomHeading}>
-                            ROMFORD SHOWROOM
-                        </span>
-                    </div>
-                </div>
-
-                <div className={styles.showroom}>
-                    <div className={styles.showroomBgContainer}>
-                        <img src={sr4} alt="showrrom" className={styles.showroomBg} />
-                        <span className={styles.showroomHeading}>
-                            GALSGOW SHOWROOM
-                        </span>
-                    </div>
-                </div>
+                <ShowroomsContainer />
             </section>
         </div>
     )

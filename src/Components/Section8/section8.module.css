@@ -71,12 +71,20 @@
 }
 
 @media (max-width: 767px) {
+    .section8HeadingContainer {
+        padding: 2rem;
+    }
+
     .section8Heading {
         font-size: 2rem;
     }
 }
 
 @media (max-width: 550px) {
+    .section8HeadingContainer {
+        padding: 1.5rem;
+    }
+
     .section8Heading {
         text-align: center;
         margin: 40px auto;

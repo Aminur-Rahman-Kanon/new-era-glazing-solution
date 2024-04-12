@@ -45,14 +45,14 @@
 }
 
 .container2 {
-    width: 95%;
+    width: 100%;
     padding: 30px;
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .showroom {
@@ -114,5 +114,11 @@
 
     .showroomHeading {
         font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container2 {
+        padding: 0;
     }
 }

@@ -63,6 +63,8 @@
   color:rgb(125, 125, 125);
   text-align: center;
   font-weight: 200;
+  margin: 0;
+  margin-bottom: 40px;
   letter-spacing: 1px;
 }
 
@@ -117,7 +119,7 @@
     }
 
     .heading {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -128,6 +130,6 @@
     }
 
     .heading {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }

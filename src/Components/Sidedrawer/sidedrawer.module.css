@@ -245,6 +245,10 @@
 }
 
 .itemLink {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     text-decoration: none;
     font-family: "DM Sans", sans-serif;
     font-size: 13px;
