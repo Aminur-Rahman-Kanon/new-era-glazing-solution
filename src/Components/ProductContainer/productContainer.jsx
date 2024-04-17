@@ -21,7 +21,7 @@ const ProductContainer = () => {
     const product = products.map(prd => <div key={prd.id} className={styles.productListContainer}>
         <h2 className={styles.productHeading}>{prd.heading}</h2>
         <ul className={styles.products}>
-            {prd.product.map((item, idx) => <li key={idx+10} className={styles.product} onMouseOver={() => setPrdImg(productImg[item])}>
+            {prd.product.map((item, idx) => <li key={idx+10} className={styles.product} onMouseOver={() => setPrdImg(prd.img[0])}>
                 <a href={'/products/xp view'} className={styles.productLink}>{item}</a>
             </li>)}
         </ul>

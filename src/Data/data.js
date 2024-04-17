@@ -101,54 +101,63 @@ export const testReview = [
 export const products = [
     {
         id: 1,
-        heading: 'Aluminium Bi-Folding Doors',
+        heading: 'Bi-Folding Doors',
         product: [
-            'XP View', 'XP88', 'XP10', 'Steel Look Bifold Doors'
+            'ASS 70 FD', 'AS FD 75', 'OB-47', 'OB-49', 'C-Line', 'Bifold Plus', 'Visufold'
         ],
         img: [p1, p2, p3],
         video
     },
     {
         id: 2,
-        heading: 'External Sliding Doors',
+        heading: 'Sliding Doors',
         product: [
-            'XP Glide', 'XP Slide 25', 'XP Slide LS25', 'XP Infinite', 'Lift & Slide Doors', 'Double Sliding Patio Doors', 'Triple-Track Sliding Patio Doors'
+            'ASE 60 Slide / Lift & Slide', 'OS 20', 'OS 44', 'OS 77', 'COR Vision', '4700 (Slide Lift & Slide)'
         ],
         img: [p4, p5, p6],
         video
     },
     {
         id: 3,
-        heading: 'Aluminium Windows',
+        heading: 'Windows',
         product: [
-            'Aluminium Casement Windows', 'Aluminium Bay Windows', 'Tilt And Turn Windows', 'Aluminium Curtain Walling', 'Shaped Windows'
+            'UPVC Rehau', 'UPVC Eurocel', 'Aluminium Smart and Cortizo'
         ],
         img: [p7, p8, p9],
         video
     },
     {
         id: 4,
-        heading: 'Aluminium Front Doors',
+        heading: 'Lantern (Pyramid Shaped Roof)',
         product: [
-            'Premium Front Doors', 'XP77 Entrance Doors'
+            'Korniche Aluminium'
         ],
         img: [p10, p11, p12],
         video
     },
     {
         id: 5,
-        heading: 'Glass Roof Systems',
+        heading: 'Flat Rooflight',
         product: [
-            'Roof Lantern Skylights', 'Glass Lean-To Roofing', 'Flat Roof Skylights', 'Pyramid Roof Lanterns'
+            'UPVC Velux (Fix & Openable)', 'Aluminium (Fix)'
         ],
         img: [p13, p14, p15],
         video
     },
     {
         id: 6,
-        heading: 'Bespoke Glass Solutions',
+        heading: 'Single Side / French Door',
         product: [
-            'Glass Balustrade Balcony', 'Glass Entrance Artiums'
+            'UPVC Rehau', 'UPVC Eurocel', 'Aluminium Schuco', 'Aluminium Cortizo', 'Aluminium Origin & Smart'
+        ],
+        img: [p16, p17, p18],
+        video
+    },
+    {
+        id: 7,
+        heading: 'Front / Entrance Door',
+        product: [
+            'UPVC Rehau', 'UPVC Eurocel', 'UPVC Composite', 'Aluminium Schuco', 'Aluminium Cortizo', 'Aluminium Origin & Smart', 'Aluminium Hallmark'
         ],
         img: [p16, p17, p18],
         video
