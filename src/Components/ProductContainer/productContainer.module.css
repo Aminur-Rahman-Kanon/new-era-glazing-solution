@@ -23,6 +23,14 @@
     z-index: 400;
 }
 
+.hr {
+    width: 100%;
+    /* height: 1px; */
+    border: none;
+    margin: 0;
+    border-bottom: 1px solid #e5e4e4;
+}
+
 .xBtn {
     font-size: 1rem;
     color: white;
@@ -144,19 +152,8 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* animation: fade-in 1s linear forwards; */
     transition: all 1s linear;
 
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 @media (max-width: 1023px) {

@@ -31,7 +31,7 @@ const ProductsContainer = ({ product }) => {
                                 <h3 className={styles.headingLightSmall}>{productId.heading}</h3>
                                 <h2 className={styles.headingGreen}>{`TRANSFORM YOUR SPACE WITH ${productId.heading}`}</h2>
                                 <p className={styles.paraLight}>Perfect for filling your home with natural light, bi-fold patio doors can instantly make any space feel bigger, brighter, and more beautiful. And with our market-leading slimline aluminium bi-fold doors, you can create a seamless transition between indoors and out.</p>
-                                <select defaultValue='select a product' className={styles.sectionSelect} onChange={() => window.location.assign('/products/xp view')}>
+                                <select defaultValue='select a product' className={styles.sectionSelect} onChange={(e) => window.location.assign(`/products/${e.target.value}`)}>
                                     <option disabled className={styles.section1Option}>select a product</option>
                                     {productId.product.map((op, idx) => <option key={idx}>{op}</option>)}
                                 </select>

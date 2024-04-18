@@ -9,6 +9,7 @@ import { displayNestedItemHandler } from '../../Utilities/utilities';
 import ProductSelector from '../ProductSelector/productSelector';
 import { products } from '../../Data/data';
 import Logo from '../Logo/logo';
+import QuoteLink from '../QuoteLink/quoteLink';
 
 const Sidedrawer = () => {
 
@@ -57,6 +58,9 @@ const Sidedrawer = () => {
                                 <span className={styles.headingText}>PRODUCT COLLECTION</span>
                             </a>
                         </div>
+                    </div>
+                    <div className={styles.quoteLink}>
+                        <QuoteLink />
                     </div>
                     <div className={styles.heading2Container}>
                         <div className={styles.itemContainer}>

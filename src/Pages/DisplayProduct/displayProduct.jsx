@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import styles from './displayProduct.module.css';
 import ContextApi from '../../Components/ContextApi/contextApi';
 import DisplayProductContainer from '../../Components/DisplayProductContainer/displayProductContainer';
@@ -8,10 +9,21 @@ const DisplayProduct = () => {
     const context = useContext(ContextApi);
     const product = context.product;
     let displayProduct = null;
-    // const displayProduct = product && product.length && <DisplayProductContainer product={product[0]} />
+    
+    const { productId } = useParams();
+    const [item, setItem] = useState({});
+    
+    useEffect(() => {
+        if (product.length && productId) {
+            const filteredItem = product.filter(i => i.title === productId);
+            if (filteredItem.length){
+                setItem(filteredItem[0]);
+            }
+        }
+    }, [product, productId]);
 
-    if (product && product.length){
-        displayProduct = <DisplayProductContainer product={product[0]}/>
+    if (Object.keys(item).length){
+        displayProduct = <DisplayProductContainer product={item}/>
     }
     else {
         displayProduct= <div className={styles.fallback}>

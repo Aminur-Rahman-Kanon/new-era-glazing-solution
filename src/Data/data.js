@@ -35,7 +35,11 @@ import shwroom3 from '../Assets/showrooms/showrooms_3.jpg';
 import shwroom4 from '../Assets/showrooms/showrooms_4.jpg';
 
 export const items = [
-    'windows', 'doors', 'conservatories', 'porches', 'orangeries', 'rooftrim', 'garage doors', 'extensions', 'cladding'
+    'bifold doors', 'sliding doors', 'windows'
+]
+
+export const colors = [
+    'black', 'grey', 'white', 'others'
 ]
 
 export const popularProducts = [
@@ -103,7 +107,7 @@ export const products = [
         id: 1,
         heading: 'Bi-Folding Doors',
         product: [
-            'ASS 70 FD', 'AS FD 75', 'OB-47', 'OB-49', 'C-Line', 'Bifold Plus', 'Visufold'
+            'ass 70 fd', 'as fd 75', 'ob-47', 'ob-49', 'c-line', 'bifold plus', 'visufold'
         ],
         img: [p1, p2, p3],
         video
@@ -112,7 +116,7 @@ export const products = [
         id: 2,
         heading: 'Sliding Doors',
         product: [
-            'ASE 60 Slide / Lift & Slide', 'OS 20', 'OS 44', 'OS 77', 'COR Vision', '4700 (Slide Lift & Slide)'
+            'ase 60 lift & slide', 'os 20', 'os 44', 'os 77', 'cor vision', '4700 (lift & slide)'
         ],
         img: [p4, p5, p6],
         video
@@ -121,7 +125,7 @@ export const products = [
         id: 3,
         heading: 'Windows',
         product: [
-            'UPVC Rehau', 'UPVC Eurocel', 'Aluminium Smart and Cortizo'
+            'UPVC Rehau', 'UPVC Eurocel', 'Aluminium Smart & Cortizo'
         ],
         img: [p7, p8, p9],
         video
@@ -165,30 +169,37 @@ export const products = [
 ]
 
 export const productImg = {
-    "XP View": p1,
-    "XP88": p2,
-    "XP10": p3,
-    "Steel Look Bifold Doors": p4,
-    "XP Glide": p5,
-    "XP Slide 25": p6,
-    "XP Slide LS25": p7,
-    "XP Infinite": p8,
-    "Lift & Slide Doors": p9,
-    "Double Sliding Patio Doors": p10,
-    "Triple-Track Sliding Patio Doors": p11,
-    "Aluminium Casement Windows": p12,
-    "Aluminium Bay Windows": p13,
-    "Tilt And Turn Windows": p14,
-    "Aluminium Curtain Walling": p15,
-    "Shaped Windows": p16,
-    "Premium Front Doors": p17,
-    "XP77 Entrance Doors": p18,
-    "Roof Lantern Skylights": p19,
-    "Glass Lean-To Roofing": p20,
-    "Flat Roof Skylights": p21,
-    "Pyramid Roof Lanterns": p22,
-    "Glass Balustrade Balcony": p23,
-    "Glass Entrance Artiums": p24
+    "ass 70 fd": p1,
+    "as fd 75": p2,
+    "ob-47": p3,
+    "ob-49": p4,
+    "c-line": p5,
+    "bifold plus": p6,
+    "visufold": p7,
+    "ase 60 lift & slide": p8,
+    "os 20": p9,
+    "os 44": p10,
+    "os 77": p20,
+    "cor vision": p11,
+    "4700 (lift & slide)": p12,
+    "UPVC rehau": p13,
+    "UPVC Eurocel": p14,
+    "Aluminium Smart & Cortizo": p15,
+    "Korniche Aluminium": p16,
+    "UPVC Velux (Fix & Openable)": p17,
+    "Aluminium (Fix)": p18,
+    "UPVC Rehau": p19,
+    "UPVC Eurocel": p20,
+    "Aluminium Schuco": p21,
+    "Aluminium Cortizo": p22,
+    "Aluminium Origin & Smart": p23,
+    "UPVC Rehau": p24,
+    "UPVC Eurocel": p1,
+    "UPVC Composite": p2,
+    "Aluminium Schuco": p3,
+    "Aluminium Cortizo": p4,
+    "Aluminium Origin & Smart": p5,
+    "Aluminium Hallmark": p6
 }
 
 export const brochureItems = [

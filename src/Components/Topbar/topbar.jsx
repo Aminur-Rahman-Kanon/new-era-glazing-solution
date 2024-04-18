@@ -22,7 +22,9 @@ const Topbar = () => {
             const topbarBtns = topbar.children[2];
             const logo = topbarBtns.children[0].children[0];
             const btn1 = topbarBtns.children[1].children[0];
-            const btn2 = topbarBtns.children[1].children[1];
+            const btn2 = topbarBtns.children[1].children[1].children[1];
+            const btn3 = topbarBtns.children[1].children[1].children[0];
+            console.log(btn3);
             const hLine1 = topbar.children[1];
             const hLine2 = topbar.children[3];
             const bottomHeading = topbar.children[4];
@@ -34,6 +36,7 @@ const Topbar = () => {
                 logo.src = logoImg2;
                 btn1.style.color = '#606060';
                 btn2.style.color = '#606060';
+                btn3.style.display = 'flex'
                 hLine2.style.display = 'none';
                 bottomHeading.style.display = 'none';
             }
@@ -47,6 +50,7 @@ const Topbar = () => {
                     hLine1.style.display = 'none';
                     hLine2.style.display = 'block';
                     btn2.style.color = 'white';
+                    btn3.style.display = 'none'
                     bottomHeading.style.display = 'none';
                 }
                 else {
@@ -58,6 +62,7 @@ const Topbar = () => {
                     hLine1.style.display = 'block';
                     hLine2.style.display = 'block';
                     btn2.style.color = 'white';
+                    btn3.style.display = 'none'
                     bottomHeading.style.display = 'flex';
                 }
             }

@@ -41,10 +41,10 @@ const Homepage = () => {
                             <Link to="/brochure" className={styles.headerLink}>FREE BROCHURE</Link>
                         </div>
                     </div>
-                    <div data-aos="fade-up-left" className={styles.contactFormContainer}>
+                    {/* <div data-aos="fade-up-left" className={styles.contactFormContainer}>
                         <h2 className={styles.contactFormHeading}>GET A PRICE</h2>
                         <ContactFormContainer border={false}/>
-                    </div>
+                    </div> */}
                 </div>
             </section>
             <section className={styles.section4}>

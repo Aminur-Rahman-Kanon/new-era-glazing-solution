@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styles from './displayProductContainer.module.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRulerCombined, faEarListen, faWater, faAward, faCircleNotch } from '@fortawesome/free-solid-svg-icons';
+import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 import anniversary from '../../Assets/icons/anniversary.png';
 import ear from '../../Assets/icons/ear.png';
 import scale from '../../Assets/icons/scale.png';
@@ -178,10 +178,21 @@ const DisplayProductContainer = ({ product }) => {
                     <div className={styles.header9Bottom}>
                         <p className={styles.header9P}>THERE ARE ALSO UP TO 200 RAL COLOURS TO CHOOSE FROM INCLUDING SLIGHT DISCOUNTS FOR RAL 9007, RAL 7021 & RAL 7032 DUE TO THEIR POPULARITY.</p>
                         <ul className={styles.header9ColorLists}>
-                            {product.product.header9.color.map(clr => <li data-aos="fade-right" key={clr.title} className={styles.header9List}>
-                                <span className={styles.header9Color} style={{backgroundColor: `${clr.value}`}}></span>
-                                <span className={styles.header9ColorTitle}>{clr.title}</span>
-                            </li>)}
+                            {product.product.header9.color.map(clr => {
+                                if (clr.title === 'Non-Stocked Color'){
+                                    return <li data-aos="fade-right" key={clr.title} className={styles.header9List}>
+                                        <span className={`${styles.header9Color} ${styles.nonStockColor}`}></span>
+                                        <span className={styles.header9ColorTitle}>{clr.title}</span>
+                                    </li>
+                                }
+                                else {
+                                    return <li data-aos="fade-right" key={clr.title} className={styles.header9List}>
+                                        <span className={styles.header9Color} style={{backgroundColor: `${clr.value}`}}></span>
+                                        <span className={styles.header9ColorTitle}>{clr.title}</span>
+                                    </li>
+                                }
+                            })
+                            }
                         </ul>
                     </div>
                 </div>

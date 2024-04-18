@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import styles from './contactFormContainer.module.css';
-import { items } from "../../Data/data";
+import { items, colors } from "../../Data/data";
 import { leaveFocus, focusElement, emailValiditionHandler, phoneNumberValidationHandler } from '../../Utilities/utilities';
 
 const ContactFormContainer = ({ border }) => {
 
     const item = items.map(item => <option key={item} className={styles.option}>{item}</option>);
+    const colour = colors.map(clr => <option key={clr} className={styles.option}>{clr}</option>);
 
     const [product, setProduct] = useState('');
     const [name, setName] = useState('');
@@ -14,6 +15,7 @@ const ContactFormContainer = ({ border }) => {
     const [email, setEmail] = useState('');
     const [emailValiditaion, setEmailValidation] = useState(true);
     const [address, setAddress] = useState('');
+    const [color, setColor] = useState('');
     const [btnDisable, setBtnDisable] = useState(true);
 
     
@@ -37,12 +39,6 @@ const ContactFormContainer = ({ border }) => {
     return (
         <div className={styles.contactFormMain}>
             <form className={styles.contactForm}>
-                <div className={styles.selectContainer} style={border ? {border: '1px solid gray'} : {border: 'none'}}>
-                    <select className={styles.select} defaultValue={"Select a product"} onChange={(e) => setProduct(e.target.value)}>
-                        <option disabled>Select a product</option>
-                        {item}
-                    </select>
-                </div>
                 <div className={styles.inputContainer} style={border ? {border: '1px solid gray'} : {border: 'none'}}>
                     <span className={styles.label}>Full Name</span>
                     <input className={styles.input}
@@ -71,12 +67,32 @@ const ContactFormContainer = ({ border }) => {
                             onChange={(e) => setEmail(e.target.value)}
                             style={emailValiditaion ? {boxShadow: '0px 0px 15px 2px #d0e20d00'} : {boxShadow: '0px 0px 15px 2px #9d0e0e'}} />
                 </div>
+                <div className={styles.selectContainer} style={border ? {border: '1px solid gray'} : {border: 'none'}}>
+                    <select className={styles.select} defaultValue={"Select a product"} onChange={(e) => setProduct(e.target.value)}>
+                        <option disabled>Select a product</option>
+                        {item}
+                    </select>
+                </div>
+                <div className={styles.selectContainer} style={border ? {border: '1px solid gray'} : {border: 'none'}}>
+                    <select className={styles.select} defaultValue={"Select a color"} onChange={(e) => setColor(e.target.value)}>
+                        <option disabled>Select a color</option>
+                        {colour}
+                    </select>
+                </div>
+                <div className={styles.inputContainer} style={border ? {border: '1px solid gray'} : {border: 'none'}, color === 'others' ? {display: 'block'} : {display: 'none'}}>
+                    <span className={styles.label}>Color</span>
+                    <input className={styles.input}
+                            placeholder='Color'
+                            onFocus={() => focusElement(3, styles)}
+                            onBlur={() => leaveFocus(3, styles)}
+                            onChange={(e) => setColor(e.target.value)}/>
+                </div>
                 <div className={styles.inputContainer} style={border ? {border: '1px solid gray'} : {border: 'none'}}>
                     <span className={styles.label}>Full Address</span>
                     <input className={styles.input}
                             placeholder='Full Address'
-                            onFocus={() => focusElement(3, styles)}
-                            onBlur={() => leaveFocus(3, styles)}
+                            onFocus={() => focusElement(4, styles)}
+                            onBlur={() => leaveFocus(4, styles)}
                             onChange={(e) => setAddress(e.target.value)}/>
                 </div>
 

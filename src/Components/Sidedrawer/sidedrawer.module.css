@@ -278,6 +278,16 @@
     letter-spacing: 1px;
 }
 
+.quoteLink {
+    width: 100%;
+    height: 40px;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 @media (max-width: 1023px) {
     .wrapper2 {
         flex-direction: column-reverse;
@@ -384,5 +394,9 @@
         font-size: 18px;
         font-weight: 400;
         letter-spacing: 1px;
+    }
+
+    .quoteLink {
+        display: flex;
     }
 }
