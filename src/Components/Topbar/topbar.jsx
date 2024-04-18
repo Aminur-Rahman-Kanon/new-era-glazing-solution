@@ -24,7 +24,6 @@ const Topbar = () => {
             const btn1 = topbarBtns.children[1].children[0];
             const btn2 = topbarBtns.children[1].children[1].children[1];
             const btn3 = topbarBtns.children[1].children[1].children[0];
-            console.log(btn3);
             const hLine1 = topbar.children[1];
             const hLine2 = topbar.children[3];
             const bottomHeading = topbar.children[4];
@@ -39,6 +38,9 @@ const Topbar = () => {
                 btn3.style.display = 'flex'
                 hLine2.style.display = 'none';
                 bottomHeading.style.display = 'none';
+                if (window.innerWidth <= 900){
+                    btn3.style.display = 'none';
+                }
             }
             else {
                 if (window.innerWidth <= 767){
