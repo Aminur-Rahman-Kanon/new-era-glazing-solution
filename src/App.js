@@ -17,6 +17,7 @@ const OurProcess = lazy(() => import('./Pages/OurProcess/ourProcess'));
 const Showrooms = lazy(() => import('./Pages/Showrooms/showrooms'));
 const OurTechnology = lazy(() => import('./Pages/OurTechnology/ourTechnology'));
 const Products = lazy(() => import('./Pages/Products/products'));
+const Aboutus = lazy(() => import('./Pages/AboutUs/aboutUs'));
 
 function App() {
 
@@ -82,6 +83,9 @@ function App() {
               <Route path='/product/:productId' element={<Suspense fallback={<Spinner spinner={true}/>}>
                 <Products />
               </Suspense>} />
+              <Route path='/about-us' element={<Suspense fallback={<Spinner spinner={true} />}>
+                <Aboutus />
+              </Suspense>}/>
             </Routes>
             <Footer />
         </ContextApi.Provider>
