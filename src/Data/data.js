@@ -46,33 +46,33 @@ export const popularProducts = [
     {
         title: 'Bi-Folding Doors',
         img: biFoldingDoors,
-        link: '/product/Aluminium Bi-Folding Doors'
+        link: '/product/Bi-Folding Doors'
     },
     {
         title: 'Sliding Doors',
         img: slidingDoors,
-        link: '/product/External Sliding Doors'
+        link: '/product/Sliding Doors'
     },
     {
-        title: 'Aluminium Windows',
+        title: 'Windows',
         img: aluminiumWindows,
-        link: '/product/Aluminium Windows'
+        link: '/product/Windows'
     },
-    {
-        title: 'Distinctive Entrance Doors',
-        img: entranceDoors,
-        link: '/product/Aluminium Front Doors'
-    },
-    {
-        title: 'Glass Roofing Systems',
-        img: glassRoofing,
-        link: '/product/Glass Roof Systems'
-    },
-    {
-        title: 'Steel Look Roors & Windows',
-        img: steelDoors,
-        link: '/product/Bespoke Glass Solutions'
-    },
+    // {
+    //     title: 'Distinctive Entrance Doors',
+    //     img: entranceDoors,
+    //     link: '/product/Aluminium Front Doors'
+    // },
+    // {
+    //     title: 'Glass Roofing Systems',
+    //     img: glassRoofing,
+    //     link: '/product/Glass Roof Systems'
+    // },
+    // {
+    //     title: 'Steel Look Roors & Windows',
+    //     img: steelDoors,
+    //     link: '/product/Bespoke Glass Solutions'
+    // },
 ]
 
 export const testReview = [
@@ -209,10 +209,10 @@ export const brochureItems = [
 export const showrooms = [
     {
         id: 1,
-        img: shwroom1,
-        name: 'leeds showroom',
+        img: shwroom3,
+        name: 'romford showroom',
         phone: '+44 7875 531847',
-        address: 'Unit 4, Phoenix Business Centre, Spur Road, Chichester PO19 8PN',
+        address: 'Unit 2, Midland House, 111-113 Victoria Road, London, Romford, RM1 2LX',
         openingHours: '9am - 5pm'
     },
     {
@@ -225,8 +225,8 @@ export const showrooms = [
     },
     {
         id: 3,
-        img: shwroom3,
-        name: 'romford showroom',
+        img: shwroom1,
+        name: 'leeds showroom',
         phone: '+44 7875 531847',
         address: 'Unit 4, Phoenix Business Centre, Spur Road, Chichester PO19 8PN',
         openingHours: '9am - 5pm'

@@ -29,13 +29,13 @@ const Homepage = () => {
                 <div className={styles.bgContainer}></div>
                 <div className={styles.elementContainer}>
                     <div className={styles.headerContainer}>
-                        <h1 className={styles.headerH1}>CREATE YOUR SPACE WITH NEW AGE</h1>
+                        <h1 className={styles.headerH1}>CREATE YOUR SPACE WITH <br className={styles}/> NEW AGE</h1>
                         <p className={styles.headerP}>Create a space to call home with our stunning British made products including
                         bifold & sliding doors, entrance doors, windows, glass roofs & much more.</p>
-                        <div className={styles.headerLinkContainer}>
+                        {/* <div className={styles.headerLinkContainer}>
                             <Link to={""} className={styles.headerLink}>Explore Our Products</Link>
                             <Link to='/showrooms' className={styles.headerLink}>Visit Our Showrooms</Link>
-                        </div>
+                        </div> */}
                         <div className={styles.headerLinkContainer}>
                             <Link to="/request-quote" className={styles.headerLink}>GET A PRICE</Link>
                             <Link to="/brochure" className={styles.headerLink}>FREE BROCHURE</Link>
@@ -76,8 +76,8 @@ const Homepage = () => {
                     <p className={styles.section2P}>We understand that your home is more than just a home. We understand that it’s a big decision, which is why every market leading product that we make is designed with you in mind.</p>
                     <p className={styles.section2P}>Whether you’re looking to renovate your home with expansive new bi-folding doors, planning a property extension with slim-framed sliding doors, or embarking on a grand design project. We have the experience, infrastructure, expertise & bespoke British made product range that can put your mind at ease as we work together to create your dream home.</p>
                     <div className={styles.section2LinkContainer}>
-                        <Link className={styles.section2Link}>The New Age Difference</Link>
-                        <Link className={styles.section2Link}>Our Completed Work</Link>
+                        <Link to='/our-technology' className={styles.section2Link}>Our Technology</Link>
+                        <Link to='/our-process' className={styles.section2Link}>Our Process</Link>
                     </div>
                 </div>
             </section>
@@ -88,8 +88,8 @@ const Homepage = () => {
                     <p className={styles.section3P}>We also offer the slimmest, glass sliding doors available in the UK, alongside several other patio door systems ranging from slim-line panoramic doors, to heavy-duty lift and slide doors.</p>
                     <p className={styles.section3P}>Our range of bifold & sliding doors will turn your once ordinary room into a modern, light, inviting space. Both will blur the lines between the inside and out, creating a seamless link between your home and garden. This video highlights some of the main differences between bi-folding and sliding doors as you consider which stunning product is best suited for your upcoming project.</p>
                     <div className={styles.section3LinkContainer}>
-                        <Link className={styles.section3Link}>Bi-Folding Doors</Link>
-                        <Link className={styles.section3Link}>Sliding Doors</Link>
+                        <Link to='/product/Bi-Folding Doors' className={styles.section3Link}>Bi-Folding Doors</Link>
+                        <Link to='/product/Sliding Doors' className={styles.section3Link}>Sliding Doors</Link>
                     </div>
                 </div>
                 <div className={styles.section3BgContainer}>
@@ -123,7 +123,7 @@ const Homepage = () => {
                     <h2 className={styles.section7Heading1}>IS IT WORTH VISITING A NEW AGE GLAZING SHOWROOM?</h2>
                     <p className={styles.section7P}>There’s no better way to experience how our bi-folding doors, sliding patio doors, aluminium windows and glazed roofing systems could completely transform your property than by visiting one of our beautiful showrooms.</p>
                     <h3 className={styles.section7Heading2}>LONDON SHOWROOMS</h3>
-                    <p className={styles.section7P}>We have two stunning London showrooms covering the South East located in <Link to={''} className={styles.section7Link}>Romford, Essex</Link> & <Link to={''} className={styles.section7Link}>Weybridge in Surrey.</Link></p>
+                    <p className={styles.section7P}>We have two stunning London showrooms covering the South East located in <Link to='/showrooms' className={styles.section7Link}>Romford, Essex</Link> & <Link to={''} className={styles.section7Link}>Weybridge in Surrey.</Link></p>
                     <p className={styles.section7P}>As well as in our showrooms, you can find our products displayed at various exhibitions all over the UK. We attend annual events in Birmingham, London, Farnborough, Surrey, Harrogate, Glasgow and Edinburgh.</p>
                 </div>
                 <div className={styles.section7BgContainer}>
