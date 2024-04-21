@@ -75,7 +75,7 @@ const ContactFormContainer = () => {
 
         formData.append('data', JSON.stringify(dataToLoad));
 
-        await fetch('http://localhost:8080/contact-query', {
+        await fetch('https://new-era-glazing-solution-server.onrender.com/contact-query', {
             method: 'POST',
             body: formData
         }).then(res => res.json()).then(result => {
