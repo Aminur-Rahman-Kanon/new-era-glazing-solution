@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgba(255, 255, 255, 0.756); */
+    font-family: "DM Sans", sans-serif;
 }
 
 .contactForm {
@@ -18,13 +18,14 @@
 
 .selectContainer {
     width: 100%;
-    margin: 10px auto;
+    border: 1px solid gray;
+    margin: 8px auto;
     box-sizing: border-box;
 }
 
 .select {
     width: 100%;
-    height: 35px;
+    height: 30px;
     border: none;
     outline: none;
     padding-left: 10px;
@@ -38,18 +39,25 @@
 .inputContainer {
     position: relative;
     width: 100%;
-    margin: 10px auto;
+    margin: 8px auto;
+    border: 1px solid gray;
     box-sizing: border-box;
 }
 
 .input {
     width: 100%;
-    height: 35px;
+    height: 30px;
     border: 1px solid transparent;
     outline: none;
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+}
+
+textarea {
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
 }
 
 input::-webkit-outer-spin-button,
@@ -88,6 +96,44 @@ input[type=number] {
     background-color: #d0e20d;
 }
 
+.attachmentContainer {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    margin: 8px auto;
+    box-sizing: border-box;
+    margin: 8px auto;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.attchmentLabel {
+    font-size: 12px;
+    color: rgb(44, 44, 44);
+}
+
+.attachmentBtn {
+    width: 70px;
+    height: 20px;
+    font-size: 11px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: rgb(44, 44, 44);
+    cursor: pointer;
+}
+
+.attachmentBtn:hover {
+    background-color: #d0e20d;
+    color: black;
+}
+
 .submitBtn {
     width: 100%;
     height: 40px;
@@ -105,10 +151,60 @@ input[type=number] {
     color: rgba(80, 79, 79, 0.513);
 }
 
+.statusContainer {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.statusH2 {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 5px;
+}
+
+.statusP {
+    font-size: 15px;
+    font-weight: 200;
+    color: rgb(59, 59, 59);
+    margin: 5px;
+}
+
+.statusBtn {
+    width: 150px;
+    height: 35px;
+    margin-top: 20px;
+    border: 1px solid #d0e20d;
+    background-color: #d0e20d;
+    color: rgb(78, 78, 78);
+    cursor: pointer;
+    font-size: 14px;
+    font: 300;
+    text-transform: uppercase;
+}
+
+.statusBtn:hover {
+    background-color: #bccd04;
+}
+
 .info {
     font-size: 13px;
     letter-spacing: 1px;
     font-family: "Petrona", serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+.spinner {
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .statusBtn {
+        width: 100%;
+    }
 }

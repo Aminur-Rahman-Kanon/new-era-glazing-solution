@@ -24,7 +24,6 @@ const Topbar = () => {
             const btn1 = topbarBtns.children[1].children[0];
             const btn2 = topbarBtns.children[1].children[1].children[1];
             const btn3 = topbarBtns.children[1].children[1].children[0];
-            console.log(btn3);
             const hLine1 = topbar.children[1];
             const hLine2 = topbar.children[3];
             const bottomHeading = topbar.children[4];
@@ -44,7 +43,6 @@ const Topbar = () => {
                 if (window.innerWidth <= 767){
                     topbar.style.backgroundColor = '#00000091';
                     additionalBanner.style.display = 'none'
-                    // additionalBanner.children[0].children[0].style.color = 'white';
                     logo.src = logoImg1;
                     btn1.style.color = 'white';
                     hLine1.style.display = 'none';
