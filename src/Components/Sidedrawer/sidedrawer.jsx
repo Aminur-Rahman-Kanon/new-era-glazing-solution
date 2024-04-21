@@ -133,7 +133,7 @@ const Sidedrawer = () => {
                                 <h3 className={styles.itemHeading}>THE COMPANY</h3>
                                 <ul className={styles.items}>
                                     <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>THE NEW ERA GLAZING SOLUTION TEAM</a>
+                                        <a href='/about-us' className={styles.itemLink}>THE NEW AGE SOLUTION TEAM</a>
                                     </li>
                                     <li className={styles.item}>
                                         <a href={''} className={styles.itemLink}>VIEW OUR COMPLETED PROJECTS</a>

@@ -38,6 +38,9 @@ const Topbar = () => {
                 btn3.style.display = 'flex'
                 hLine2.style.display = 'none';
                 bottomHeading.style.display = 'none';
+                if (window.innerWidth <= 900){
+                    btn3.style.display = 'none';
+                }
             }
             else {
                 if (window.innerWidth <= 767){

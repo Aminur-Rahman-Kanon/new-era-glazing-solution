@@ -40,7 +40,9 @@
 }
 
 .headerContainer {
-    width: 80%;
+    width: 900px;
+    padding: 25px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,8 +52,8 @@
 .headerH1 {
     text-align: center;
     color: white;
-    font-size: 2.7rem;
-    font-weight: 200;
+    font-size: 3.3rem;
+    font-weight: 150;
     letter-spacing: 1px;
     margin: 0;
     margin-bottom: 40px;
@@ -73,10 +75,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.headerLinkContainer:nth-of-type(2) {
-    display: none;
 }
 
 .headerLink {
@@ -144,6 +142,7 @@
 
 .section5 {
     width: 100%;
+    max-width: 1500px;
     margin: 50px auto;
     padding: 10px;
     box-sizing: border-box;
@@ -298,6 +297,7 @@
 
 .section2 {
     width: 100%;
+    max-width: 1500px;
     margin: 50px auto;
     padding: 40px;
     box-sizing: border-box;
@@ -324,7 +324,6 @@
     width: 40%;
     padding: 3rem;
     box-sizing: border-box;
-    /* border: 4px solid #d0e20d; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -375,6 +374,7 @@
 
 .section3 {
     width: 100%;
+    max-width: 1500px;
     margin: 50px auto;
     padding: 40px;
     box-sizing: border-box;
@@ -448,12 +448,14 @@
 
 .section4 {
     width: 100%;
+    max-width: 1500px;
     margin: 50px auto;
     overflow: hidden;
 }
 
 .review {
     width: 100%;
+    max-width: 1500px;
     margin: 50px auto;
     padding: 40px;
     box-sizing: border-box;
@@ -472,6 +474,7 @@
 
 .section6 {
     width: 100%;
+    max-width: 1500px;
     margin: 50px auto;
     padding: 40px;
     box-sizing: border-box;
@@ -558,6 +561,7 @@
 
 .section7 {
     width: 100%;
+    max-width: 1500px;
     margin: 50px auto;
     padding: 40px;
     box-sizing: border-box;
@@ -617,6 +621,7 @@
 
 .section8 {
     width: 100%;
+    max-width: 1500px;
     margin: 50px auto;
     padding: 40px;
     box-sizing: border-box;
@@ -628,19 +633,11 @@
 
 @media (max-width:1080px) {
     .headerContainer {
-        width: 90%;
+        width: 100%;
     }
 
     .headerLinkContainer {
         justify-content: center;
-    }
-
-    .headerLinkContainer:nth-of-type(1) {
-        display: none;
-    }
-
-    .headerLinkContainer:nth-of-type(2) {
-        display: flex;
     }
 
     .contactFormContainer {
@@ -759,9 +756,12 @@
 
 @media (max-width: 767px) {
     .bgContainer {
-        height: auto;
         background-attachment: unset;
         min-height: 650px;
+    }
+
+    .headerContainer {
+        padding: 10px;
     }
 
     .headerH1 {
@@ -816,11 +816,7 @@
     }
 }
 
-@media (max-width: 550px) {
-    .headerContainer {
-        width: 100%;
-    }
-    
+@media (max-width: 550px) {    
     .headerLinkContainer {
         flex-direction: column;
     }
