@@ -8,6 +8,8 @@ import { focusElement, leaveFocus, emailValiditionHandler, phoneNumberValidation
 import Spinner from "../../Components/Spinner/spinner";
 import Modal from "../../Components/Modal/modal";
 import MessageContainer from "../../Components/MessageContainer/messageContainer";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 const Brochure = () => {
 
@@ -19,7 +21,6 @@ const Brochure = () => {
     const [emailValiditaion, setEmailValidation] = useState(true);
     const [phone, setPhone] = useState('');
     const [phoneValidation, setPhoneValidation] = useState(true);
-    const [postcose, setPostcode] = useState('');
     const [town, setTown] = useState('');
     const [product, setProduct] = useState('');
     const [requestType, setRequstType] = useState('');
@@ -39,7 +40,7 @@ const Brochure = () => {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            if (name && address && email && emailValiditaion && phone && phoneValidation && postcose && town && product && requestType && agreement) {
+            if (name && address && email && emailValiditaion && phone && phoneValidation && town && product && requestType && agreement) {
                 setBtnDisable(false);
             }
             else {
@@ -51,7 +52,7 @@ const Brochure = () => {
             clearTimeout(timer);
         }
 
-    }, [name, address, emailValiditaion, phoneValidation, postcose, town, product, requestType, agreement]);
+    }, [name, address, emailValiditaion, phoneValidation, town, product, requestType, agreement]);
 
     const statusHandler = () => {
         setStatus('');
@@ -63,7 +64,7 @@ const Brochure = () => {
         e.preventDefault();
         setSpinner(true);
 
-        const data = {name, email, phone, address, postcose, town, product, requestType, agreement};
+        const data = {name, email, phone, address, town, product, requestType, agreement};
 
         if (requestType === 'download'){
             await fetch('https://new-era-glazing-solution-server.onrender.com/request-assets-download', {
@@ -94,7 +95,7 @@ const Brochure = () => {
                 body: JSON.stringify(data)
             }).then(res => res.json()).then(data => {
                 setSpinner(false);
-                if (data.method === 'post'){
+                if (data.status === 'success'){
                     setModal(true);
                     setStatus('success');
                 }
@@ -104,14 +105,33 @@ const Brochure = () => {
                 }
             })
         }
-
     }
+
+    let displayStatus;
+
+    if (status){
+        displayStatus = <div className={styles.statusContainer}>
+            <h2 className={styles.statusHeading}>Your query has been submitted</h2>
+            <p className={styles.statusP}>Your request will be processed immidiately</p>
+            <button className={styles.statusBtn} onClick={() => window.location.assign('/')}>OK</button>
+        </div>
+    }
+    else {
+        displayStatus = <div className={styles.statusContainer}>
+            <h2 className={styles.statusHeading}>Something went wrong</h2>
+            <p className={styles.statusP}>Your request will be processed immidiately</p>
+            <button className={styles.statusBtn} onClick={() => {
+                setModal(false);
+                setStatus('');
+            }}>OK</button>
+        </div>
+    }
+
 
     return (
         <div className={styles.brochureContainer}>
-            <Spinner spinner={spinner} />
             <Modal modal={modal}>
-                <MessageContainer type={'request-asset'} status={status} handler={statusHandler}/>
+                {displayStatus}
             </Modal>
             <div className={styles.wrapper1}>
                 <h1 className={styles.wrapperHeading1}>GET A FREE BROCHURE</h1>
@@ -159,13 +179,6 @@ const Brochure = () => {
                         <input type="text" className={styles.input} placeholder="FULL ADDRESS"/>
                     </div>
                     <div className={styles.inputContainer}
-                         onFocus={() => focusElement(4, styles)}
-                         onBlur={() => leaveFocus(4, styles)}
-                         onChange={(e) => setPostcode(e.target.value)}>
-                        <span className={styles.label}>POST CODE</span>
-                        <input type="text" className={styles.input} placeholder="POST CODE"/>
-                    </div>
-                    <div className={styles.inputContainer}
                          onFocus={() => focusElement(5, styles)}
                          onBlur={() => leaveFocus(5, styles)}
                          onChange={(e) => setTown(e.target.value)}>
@@ -197,7 +210,13 @@ const Brochure = () => {
                         <label htmlFor="checkbox" className={styles.checkboxLabel}>I'm happy to receive the Express newsletter, exclusive offers, and event invites.</label>
                     </div>
                     <div className={styles.btnContainer}>
-                        <button disabled={btnDisable} className={styles.submitBtn} onClick={submitFormHandler}>REQUEST</button>
+                        <button disabled={btnDisable}
+                                className={styles.submitBtn}
+                                onClick={submitFormHandler}>{
+                                    spinner ? <FontAwesomeIcon icon={faSpinner} spinPulse className={styles.spinner} />
+                                    :
+                                    'REQUEST'
+                                }</button>
                     </div>
                 </form>
                 <div className={styles.headingContainer}>

@@ -33,6 +33,7 @@
 
 .logo:nth-child(2) {
     width: 80px;
+    filter: grayscale(0.5);
 }
 
 .contactContainer {

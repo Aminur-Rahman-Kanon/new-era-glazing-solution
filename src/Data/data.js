@@ -203,7 +203,7 @@ export const productImg = {
 }
 
 export const brochureItems = [
-    'BI-FOLDS', 'SLIDING DOORS', 'ROOFS', 'WINDOWS', 'HORIZON WINDOWS', 'FRONT DOORS', 'SUMMARY OF ALL PRODUCTS'
+    'BI-FOLDING DOORS', 'SLIDING DOORS', 'WINDOWS', 'SUMMARY OF ALL PRODUCTS'
 ]
 
 export const showrooms = [

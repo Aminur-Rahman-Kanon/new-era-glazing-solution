@@ -1,6 +1,7 @@
 .brochureContainer {
     position: relative;
     width: 100%;
+    max-width: 1500px;
     margin: 100px auto;
     display: flex;
     flex-direction: column;
@@ -47,7 +48,7 @@
 .formContainer {
     width: 45%;
     box-sizing: border-box;
-    padding: 20px 50px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,6 +189,9 @@
     color: #595c5d;
     cursor: pointer;
     transition: all 0.3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .submitBtn:hover {
@@ -198,6 +202,40 @@
 .submitBtn:disabled {
     cursor: default;
     opacity: 0.5;
+}
+
+.statusContainer {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.statusHeading {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.statusP {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 5px;
+    color: #181818;
+}
+
+.statusBtn {
+    width: 180px;
+    height: 35px;
+    border: 1px solid #b2c205;
+    background-color: #b2c205;
+    color: #181818;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 13px;
 }
 
 .headingContainer {
@@ -256,6 +294,7 @@
     font-weight: 600;
     letter-spacing: 2px;
     color: #595c5d;
+    margin: 7px 0;
 }
 
 .posterP {
@@ -263,6 +302,7 @@
     font-size: 13px;
     letter-spacing: 1px;
     color: #595c5d;
+    margin: 7px 0;
 }
 
 .posterHeading3 {
@@ -270,6 +310,7 @@
     font-size: 13px;
     letter-spacing: 1px;
     color: #181818;
+    margin: 7px 0;
 }
 
 .posterLink {
@@ -332,6 +373,10 @@
         font-weight: 300;
     }
 
+    .posterP {
+        text-align: center;
+    }
+
     .formContainer {
         width: 100%;
         padding: 10px 20px;
@@ -341,6 +386,10 @@
 @media (max-width: 767px) {
     .posterContianer {
         bottom: 60px;
+    }
+
+    .statusBtn {
+        width: 100%;
     }
 }
 
