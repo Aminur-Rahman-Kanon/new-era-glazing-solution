@@ -384,6 +384,10 @@
 }
 
 @media (max-width: 767px) {
+    .brochureContainer {
+        padding-top: unset;
+    }
+    
     .posterContianer {
         bottom: 60px;
     }
