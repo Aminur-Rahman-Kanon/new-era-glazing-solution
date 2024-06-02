@@ -135,7 +135,7 @@ const DisplayProductContainer = ({ product }) => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.header7}>
+                {/* <div className={styles.header7}>
                     {product.product.header7.img.map((item, idx) => 
                         <div data-aos="fade-right" key={idx} className={styles.header7Item}>
                             <div className={styles.header7BgContainer}>
@@ -152,7 +152,7 @@ const DisplayProductContainer = ({ product }) => {
                             </div>
                         </div>
                     )}
-                </div>
+                </div> */}
                 <div className={styles.header8}>
                     <h3 className={styles.header8H3}>{product.product.header8.heading}</h3>
                     <h2 className={styles.header8H2}>{product.product.header8.title}</h2>
