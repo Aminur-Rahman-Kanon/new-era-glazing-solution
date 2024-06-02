@@ -41,7 +41,7 @@ const Homepage = () => {
                         <div className={styles.headerLinkContainer}>
                             <Link to="/request-quote" className={styles.headerLink}>
                                 <span className={styles.headerLinkSlider}></span>
-                                <span className={styles.headerLinkText}>get a link</span>
+                                <span className={styles.headerLinkText}>get a quote</span>
                             </Link>
                             <Link to="/brochure" className={styles.headerLink}>
                                 <span className={styles.headerLinkSlider}></span>
@@ -84,7 +84,7 @@ const Homepage = () => {
                     <p className={styles.section2P}>We understand that your home is more than just a home. We understand that it’s a big decision, which is why every market leading product that we make is designed with you in mind.</p>
                     <p className={styles.section2P}>Whether you’re looking to renovate your home with expansive new bi-folding doors, planning a property extension with slim-framed sliding doors, or embarking on a grand design project. We have the experience, infrastructure, expertise & bespoke British made product range that can put your mind at ease as we work together to create your dream home.</p>
                     <div className={styles.section2LinkContainer}>
-                        <Link to='/our-technology' className={styles.section2Link}>Our Technology</Link>
+                        {/* <Link to='/our-technology' className={styles.section2Link}>Our Technology</Link> */}
                         <Link to='/our-process' className={styles.section2Link}>Our Process</Link>
                     </div>
                 </div>

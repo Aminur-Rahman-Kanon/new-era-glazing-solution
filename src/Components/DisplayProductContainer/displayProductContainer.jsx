@@ -84,7 +84,7 @@ const DisplayProductContainer = ({ product }) => {
                             </div>
                         </div>
                     </div>
-                    <div className={styles.header3Bottom}>
+                    {/* <div className={styles.header3Bottom}>
                         <Link to="" className={styles.header3Link}>
                             <span className={styles.header3LinkText}>The Technology</span>
                             <span className={styles.header3Slider}></span>
@@ -93,7 +93,7 @@ const DisplayProductContainer = ({ product }) => {
                             <span className={styles.header3LinkText}>Our Process</span>
                             <span className={styles.header3Slider}></span>
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
                 <div className={styles.header4}>
                     <div className={styles.header4Heading}>

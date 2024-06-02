@@ -41,7 +41,7 @@ const Sidedrawer = () => {
                 <div className={styles.wrapper2}>
                     <div className={styles.heading1Container}>
                         <div className={styles.headingItem}>
-                            <a href='/showrooms' className={styles.heading} >
+                            <a href='#' className={styles.heading} >
                                 <div className={styles.headingImgContainer} id={styles.headingItem1}></div>
                                 <span className={styles.headingText}>VISIT A SHOWROOM</span>
                             </a>
@@ -90,9 +90,9 @@ const Sidedrawer = () => {
                                     <li className={styles.item}>
                                         <a href='/request-quote' className={styles.itemLink}>GET A PRICE</a>
                                     </li>
-                                    <li className={styles.item}>
+                                    {/* <li className={styles.item}>
                                         <a href='/showrooms' className={styles.itemLink}>OUR SHOWROOMS</a>
-                                    </li>
+                                    </li> */}
                                     <li className={styles.item}>
                                         <a href='/brochure' className={styles.itemLink}>DOWNLOAD FREE BROCHURE</a>
                                     </li>
@@ -102,7 +102,7 @@ const Sidedrawer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className={styles.itemContainer}>
+                        {/* <div className={styles.itemContainer}>
                             <h3 className={`${styles.itemHeading} ${styles.main}`}>THE DIFFERENCE</h3>
                             <div className={styles.itemsContainer}>
                                 <div className={styles.backBtnContainer}>
@@ -112,17 +112,14 @@ const Sidedrawer = () => {
                                 <h3 className={styles.itemHeading}>THE DIFFERENCE</h3>
                                 <ul className={styles.items}>
                                     <li className={styles.item}>
-                                        <a href='/our-process' className={styles.itemLink}>OUR PROCESS</a>
-                                    </li>
-                                    <li className={styles.item}>
                                         <a href='/our-technology' className={styles.itemLink}>OUR TECHNOLOGY</a>
                                     </li>
-                                    {/* <li className={styles.item}>
+                                    <li className={styles.item}>
                                         <a href={''} className={styles.itemLink}>TESTIMONIAL & REVIEWS</a>
-                                    </li> */}
+                                    </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
                         <div className={styles.itemContainer}>
                             <h3 className={`${styles.itemHeading} ${styles.main}`}>THE COMPANY</h3>
                             <div className={styles.itemsContainer}>
@@ -135,16 +132,19 @@ const Sidedrawer = () => {
                                     <li className={styles.item}>
                                         <a href='/about-us' className={styles.itemLink}>THE NEW ERA TEAM</a>
                                     </li>
-                                    <li className={styles.item}>
+                                    {/* <li className={styles.item}>
                                         <a href={''} className={styles.itemLink}>VIEW OUR COMPLETED PROJECTS</a>
-                                    </li>
-                                    <li className={styles.item}>
+                                    </li> */}
+                                    {/* <li className={styles.item}>
                                         <a href={''} className={styles.itemLink}>ACCREDITATION</a>
+                                    </li> */}
+                                    <li className={styles.item}>
+                                        <a href='/our-process' className={styles.itemLink}>OUR PROCESS</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div className={styles.itemContainer}>
+                        {/* <div className={styles.itemContainer}>
                             <h3 className={`${styles.itemHeading} ${styles.main}`}>NEWS & BLOG</h3>
                             <div className={styles.itemsContainer}>
                                 <div className={styles.backBtnContainer}>
@@ -161,7 +161,7 @@ const Sidedrawer = () => {
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
                         <div className={styles.itemContainer}>
                             <h3 className={`${styles.itemHeading} ${styles.main}`}>TRADE AND COMMERCIAL</h3>
                             <div className={styles.itemsContainer}>

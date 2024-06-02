@@ -15,7 +15,7 @@ const ProductContainer = () => {
     const displayProduct = context.displayProduct;
     const toggleDisplayProduct = context.displayProductHandler;
 
-    const [prdImg, setPrdImg] = useState('');
+    const [prdImg, setPrdImg] = useState(products[0].img[0]);
 
     const product = products.map(prd => <div key={prd.id} className={styles.productListContainer}>
         <h2 className={styles.productHeading}>{prd.heading}</h2>

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './ourProcess.module.css';
-import img1 from '../../Assets/ourProcess/ourProcess_1.jpeg';
+import img1 from '../../Assets/ourProcess/ourProcess_1.jpg';
 import img2 from '../../Assets/ourProcess/ourProcess_2.jpg';
 import img3 from '../../Assets/ourProcess/ourProcess_3.jpg';
 import img4 from '../../Assets/ourProcess/ourProcess_4.jpg';

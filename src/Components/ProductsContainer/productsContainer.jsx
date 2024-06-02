@@ -44,12 +44,12 @@ const ProductsContainer = ({ product }) => {
                         </div>
                     </section>
                     <section className={styles.section2}>
-                        <div className={styles.videoContainer}>
+                        {/* <div className={styles.videoContainer}>
                             <video width='100%' height='auto' controls playsInline>
                                 <source src={`${productId.video}#t=0.001`} type='video/mp4'/>
                                 Your browser doens't support video
                             </video>
-                        </div>
+                        </div> */}
                         <div className={styles.section2Header}>
                             <h2 className={styles.headingDark}>{`OUR ${productId.heading}`}</h2>
                             <p className={styles.paraDark}>At New Era, we’ve been manufacturing and installing aluminium bi-fold doors since our inception in 2007. Since then, we’ve been constantly evolving our range, and we’ve even launched a new generation of revolutionary, industry-leading bi-fold doors.</p>
@@ -108,9 +108,9 @@ const ProductsContainer = ({ product }) => {
                             <p className={styles.paraLight}>View our virtual showrooms, or alternatively, take a look through some of our completed projects below that all feature our industry-leading, British-made bespoke bi-folding doors.</p>
                         </div>
                     </section>
-                    <div className={styles.header7}>
+                    {/* <div className={styles.header7}>
                         <ShowroomsContainer />
-                    </div>
+                    </div> */}
                 </div>
                 :
                 <div>

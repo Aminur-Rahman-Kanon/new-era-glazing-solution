@@ -20,7 +20,7 @@ const Contact = () => {
                     <a href='tel:+447875531847' className={styles.headingItemTel}>+44 7875 531847</a>
                     <p className={styles.headingItemTelP}>Our lines are open Mon-Fri – 9am-5pm</p>
                 </div>
-                <div className={styles.headingItem}>
+                {/* <div className={styles.headingItem}>
                     <h3 className={styles.headingItemH3}>VISIT A SHOWROOM</h3>
                     <p className={styles.headingItemShowroomP}>Select a showroom for details & opening times.</p>
                     <div className={styles.contactGroup}>
@@ -29,7 +29,7 @@ const Contact = () => {
                         <p className={styles.headingItemContactP}><strong className={styles.strong}>WEYBRIDGE - </strong>0808 109 3528</p>
                         <p className={styles.headingItemContactP}><strong className={styles.strong}>GLASGOW - </strong>0808 109 3528</p>
                     </div>
-                </div>
+                </div> */}
             </div>
             <form className={styles.formWrapper}>
                 <div className={styles.inputContainer}
