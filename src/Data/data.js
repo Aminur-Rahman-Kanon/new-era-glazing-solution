@@ -1,33 +1,42 @@
 import biFoldingDoors from '../Assets/bi-folding_doors.jpg';
 import slidingDoors from '../Assets/sliding_doors.jpg';
 import aluminiumWindows from '../Assets/aluminium_windows.jpg';
-import glassRoofing from '../Assets/glass_roofing.jpg';
-import steelDoors from '../Assets/steel_doors.jpg';
-import entranceDoors from '../Assets/entrance_doors.jpg';
-import p1 from '../Assets/products/p1.jpg';
-import p2 from '../Assets/products/p2.jpg';
-import p3 from '../Assets/products/p3.jpg';
-import p4 from '../Assets/products/p4.jpg';
-import p5 from '../Assets/products/p5.jpg';
-import p6 from '../Assets/products/p6.jpg';
-import p7 from '../Assets/products/p7.jpg';
-import p8 from '../Assets/products/p8.jpg';
-import p9 from '../Assets/products/p9.jpg';
-import p10 from '../Assets/products/p10.jpeg';
-import p11 from '../Assets/products/p11.jpg';
-import p12 from '../Assets/products/p12.jpg';
-import p13 from '../Assets/products/p13.jpg';
-import p14 from '../Assets/products/p14.jpg';
-import p15 from '../Assets/products/p15.jpg';
-import p16 from '../Assets/products/p16.jpg';
-import p17 from '../Assets/products/p17.jpg';
-import p18 from '../Assets/products/p18.jpg';
-import p19 from '../Assets/products/p19.jpg';
-import p20 from '../Assets/products/p20.jpg';
-import p21 from '../Assets/products/p21.jpg';
-import p22 from '../Assets/products/p22.jpg';
-import p23 from '../Assets/products/p23.jpg';
-import p24 from '../Assets/products/p24.jpg';
+// import glassRoofing from '../Assets/glass_roofing.jpg';
+// import steelDoors from '../Assets/steel_doors.jpg';
+// import entranceDoors from '../Assets/entrance_doors.jpg';
+import b_f_door1 from '../Assets/products/bi_folding_doors/b1.jpg';
+import b_f_door2 from '../Assets/products/bi_folding_doors/b2.jpg';
+import b_f_door3 from '../Assets/products/bi_folding_doors/b3.jpg';
+import b_f_door4 from '../Assets/products/bi_folding_doors/b4.jpg';
+import b_f_door5 from '../Assets/products/bi_folding_doors/b5.jpg';
+import b_f_door6 from '../Assets/products/bi_folding_doors/b6.jpg';
+import b_f_door7 from '../Assets/products/bi_folding_doors/b7.jpg';
+import s_door1 from '../Assets/products/sliding_door/s1.jpg';
+import s_door2 from '../Assets/products/sliding_door/s2.jpg';
+import s_door3 from '../Assets/products/sliding_door/s3.jpeg';
+import s_door4 from '../Assets/products/sliding_door/s4.jpeg';
+import s_door5 from '../Assets/products/sliding_door/s5.jpeg';
+import s_door6 from '../Assets/products/sliding_door/s6.jpeg';
+import w1 from '../Assets/products/windows/w1.jpg';
+import w2 from '../Assets/products/windows/w2.jpg';
+import w3 from '../Assets/products/windows/w3.jpeg';
+import l1 from '../Assets/products/lantern/l1.jpg';
+import l2 from '../Assets/products/lantern/l2.jpg';
+import l3 from '../Assets/products/lantern/l3.jpeg';
+import l4 from '../Assets/products/lantern/l4.jpeg';
+import s1 from '../Assets/products/single_door/s_d_1.jpg';
+import s2 from '../Assets/products/single_door/s_d_2.jpg';
+import s3 from '../Assets/products/single_door/s_d_3.jpg';
+import s4 from '../Assets/products/single_door/s_d_4.jpg';
+import s5 from '../Assets/products/single_door/s_d_5.jpg';
+import s6 from '../Assets/products/single_door/s_d_6.jpeg';
+import f_d_1 from '../Assets/products/french_door/f1.jpg';
+import f_d_2 from '../Assets/products/french_door/f2.jpg';
+import f_d_3 from '../Assets/products/french_door/f3.jpg';
+import f_d_4 from '../Assets/products/french_door/f4.jpeg';
+import f_d_5 from '../Assets/products/french_door/f5.jpeg';
+import f_d_6 from '../Assets/products/french_door/f6.jpeg';
+import f_d_7 from '../Assets/products/french_door/f7.jpeg';
 import video from '../Assets/videos/bifold.mp4';
 import shwroom1 from '../Assets/showrooms/showrooms_1.jpg';
 import shwroom2 from '../Assets/showrooms/showrooms_2.jpg';
@@ -57,22 +66,7 @@ export const popularProducts = [
         title: 'Windows',
         img: aluminiumWindows,
         link: '/product/Windows'
-    },
-    // {
-    //     title: 'Distinctive Entrance Doors',
-    //     img: entranceDoors,
-    //     link: '/product/Aluminium Front Doors'
-    // },
-    // {
-    //     title: 'Glass Roofing Systems',
-    //     img: glassRoofing,
-    //     link: '/product/Glass Roof Systems'
-    // },
-    // {
-    //     title: 'Steel Look Roors & Windows',
-    //     img: steelDoors,
-    //     link: '/product/Bespoke Glass Solutions'
-    // },
+    }
 ]
 
 export const testReview = [
@@ -109,7 +103,7 @@ export const products = [
         product: [
             'ass 70 fd', 'as fd 75', 'ob-47', 'ob-49', 'c-line', 'bifold plus', 'visufold'
         ],
-        img: [p1, p2, p3],
+        img: [b_f_door1, b_f_door2, b_f_door3, b_f_door4, b_f_door5, b_f_door6, b_f_door7],
         video
     },
     {
@@ -118,7 +112,7 @@ export const products = [
         product: [
             'ase 60 lift & slide', 'os 20', 'os 44', 'os 77', 'cor vision', '4700 (lift & slide)'
         ],
-        img: [p4, p5, p6],
+        img: [s_door1, s_door2, s_door3, s_door4, s_door5, s_door6],
         video
     },
     {
@@ -127,7 +121,7 @@ export const products = [
         product: [
             'UPVC Rehau', 'UPVC Eurocel', 'Aluminium Smart & Cortizo'
         ],
-        img: [p7, p8, p9],
+        img: [w1, w2, w3],
         video
     },
     {
@@ -136,7 +130,7 @@ export const products = [
         product: [
             'Korniche Aluminium'
         ],
-        img: [p10, p11, p12],
+        img: [l1],
         video
     },
     {
@@ -145,7 +139,7 @@ export const products = [
         product: [
             'UPVC Velux (Fix & Openable)', 'Aluminium (Fix)'
         ],
-        img: [p13, p14, p15],
+        img: [l2, l3],
         video
     },
     {
@@ -154,7 +148,7 @@ export const products = [
         product: [
             'UPVC Rehau', 'UPVC Eurocel', 'Aluminium Schuco', 'Aluminium Cortizo', 'Aluminium Origin & Smart'
         ],
-        img: [p16, p17, p18],
+        img: [s1, s2, s3, s4, s5],
         video
     },
     {
@@ -163,44 +157,44 @@ export const products = [
         product: [
             'UPVC Rehau', 'UPVC Eurocel', 'UPVC Composite', 'Aluminium Schuco', 'Aluminium Cortizo', 'Aluminium Origin & Smart', 'Aluminium Hallmark'
         ],
-        img: [p16, p17, p18],
+        img: [f_d_1, f_d_2, f_d_3, f_d_4, f_d_5, f_d_6, f_d_7],
         video
     }
 ]
 
-export const productImg = {
-    "ass 70 fd": p1,
-    "as fd 75": p2,
-    "ob-47": p3,
-    "ob-49": p4,
-    "c-line": p5,
-    "bifold plus": p6,
-    "visufold": p7,
-    "ase 60 lift & slide": p8,
-    "os 20": p9,
-    "os 44": p10,
-    "os 77": p20,
-    "cor vision": p11,
-    "4700 (lift & slide)": p12,
-    "UPVC rehau": p13,
-    "UPVC Eurocel": p14,
-    "Aluminium Smart & Cortizo": p15,
-    "Korniche Aluminium": p16,
-    "UPVC Velux (Fix & Openable)": p17,
-    "Aluminium (Fix)": p18,
-    "UPVC Rehau": p19,
-    "UPVC Eurocel": p20,
-    "Aluminium Schuco": p21,
-    "Aluminium Cortizo": p22,
-    "Aluminium Origin & Smart": p23,
-    "UPVC Rehau": p24,
-    "UPVC Eurocel": p1,
-    "UPVC Composite": p2,
-    "Aluminium Schuco": p3,
-    "Aluminium Cortizo": p4,
-    "Aluminium Origin & Smart": p5,
-    "Aluminium Hallmark": p6
-}
+// export const productImg = {
+//     "ass 70 fd": p1,
+//     "as fd 75": p2,
+//     "ob-47": p3,
+//     "ob-49": p4,
+//     "c-line": p5,
+//     "bifold plus": p6,
+//     "visufold": p7,
+//     "ase 60 lift & slide": p8,
+//     "os 20": p9,
+//     "os 44": p10,
+//     "os 77": p20,
+//     "cor vision": p11,
+//     "4700 (lift & slide)": p12,
+//     "UPVC Rehau": p14,
+//     "UPVC Eurocel": p15,
+//     "Aluminium Smart & Cortizo": p15,
+//     "Korniche Aluminium": p16,
+//     "UPVC Velux (Fix & Openable)": p17,
+//     "Aluminium (Fix)": p18,
+//     "UPVC Rehau": p19,
+//     "UPVC Eurocel": p20,
+//     "Aluminium Schuco": p21,
+//     "Aluminium Cortizo": p22,
+//     "Aluminium Origin & Smart": p23,
+//     "UPVC Rehau": p24,
+//     "UPVC Eurocel": p1,
+//     "UPVC Composite": p2,
+//     "Aluminium Schuco": p3,
+//     "Aluminium Cortizo": p4,
+//     "Aluminium Origin & Smart": p5,
+//     "Aluminium Hallmark": p6
+// }
 
 export const brochureItems = [
     'BI-FOLDING DOORS', 'SLIDING DOORS', 'WINDOWS', 'SUMMARY OF ALL PRODUCTS'

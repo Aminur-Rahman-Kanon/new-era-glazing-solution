@@ -4,7 +4,7 @@ import AdditionalTopbar from '../AdditionalTopbar/additionalTopbar';
 import Logo from '../Logo/logo';
 import TopbarButtons from '../TopbarButtons/topbarButtons';
 import logoImg1 from '../../Assets/logo1.png';
-import logoImg2 from '../../Assets/logo2_test.png';
+import logoImg2 from '../../Assets/logo2.png';
 
 
 const Topbar = () => {

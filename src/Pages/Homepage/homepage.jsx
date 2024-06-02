@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './homepage.module.css';
 import { Link } from 'react-router-dom';
-import ContactFormContainer from '../../Components/ContactFormContainer/contactFormContainer';
 import section2Bg from '../../Assets/section2_1.jpg';
 import section3Bg from '../../Assets/section3_5.jpg';
 import section5_1 from '../../Assets/section5_1.jpg';
@@ -10,7 +9,8 @@ import section5_3 from '../../Assets/section5_bg_2.jpg';
 import section6Bg from '../../Assets/section6_bg.jpg';
 import section7Bg from '../../Assets/section7_bg.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
+import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
+import banner from '../../Assets/videos/banner.mp4';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import PopularProducts from '../../Components/PopularProducts/popularProducts';
@@ -26,10 +26,12 @@ const Homepage = () => {
     return (
         <div className={styles.homepageContainer}>
             <section className={styles.section1}>
-                <div className={styles.bgContainer}></div>
+                <div className={styles.bgContainer}>
+                    <video src={banner} type="video/mp4" autoPlay muted loop playsInline className={styles.bannerVideo}></video>
+                </div>
                 <div className={styles.elementContainer}>
                     <div className={styles.headerContainer}>
-                        <h1 className={styles.headerH1}>CREATE YOUR SPACE WITH <br className={styles}/> NEW AGE</h1>
+                        <h1 className={styles.headerH1}>CREATE YOUR SPACE WITH <br className={styles}/> NEW ERA</h1>
                         <p className={styles.headerP}>Create a space to call home with our stunning British made products including
                         bifold & sliding doors, entrance doors, windows, glass roofs & much more.</p>
                         {/* <div className={styles.headerLinkContainer}>
@@ -37,8 +39,14 @@ const Homepage = () => {
                             <Link to='/showrooms' className={styles.headerLink}>Visit Our Showrooms</Link>
                         </div> */}
                         <div className={styles.headerLinkContainer}>
-                            <Link to="/request-quote" className={styles.headerLink}>GET A PRICE</Link>
-                            <Link to="/brochure" className={styles.headerLink}>FREE BROCHURE</Link>
+                            <Link to="/request-quote" className={styles.headerLink}>
+                                <span className={styles.headerLinkSlider}></span>
+                                <span className={styles.headerLinkText}>get a link</span>
+                            </Link>
+                            <Link to="/brochure" className={styles.headerLink}>
+                                <span className={styles.headerLinkSlider}></span>
+                                <span className={styles.headerLinkText}>free brochure</span>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -96,10 +104,10 @@ const Homepage = () => {
                     <img src={section3Bg} alt="bi folding doors" className={styles.section3Bg} />
                 </div>
             </section>
-            <section className={styles.review}>
+            {/* <section className={styles.review}>
                 <h2 className={styles.reviewHeading}>Our Customer Says ...</h2>
                 <ReviewContainer />
-            </section>
+            </section> */}
             <section className={styles.section6}>
                 <div className={styles.section6Header1}>
                     <h2 className={styles.section6Heading1}>IMAGINE YOUR IDEAL HOME.</h2>
@@ -118,7 +126,7 @@ const Homepage = () => {
                     </div>
                 </div>
             </section>
-            <section className={styles.section7}>
+            {/* <section className={styles.section7}>
                 <div data-aos="fade-right" className={styles.section7HeadingContainer}>
                     <h2 className={styles.section7Heading1}>IS IT WORTH VISITING A NEW AGE GLAZING SHOWROOM?</h2>
                     <p className={styles.section7P}>There’s no better way to experience how our bi-folding doors, sliding patio doors, aluminium windows and glazed roofing systems could completely transform your property than by visiting one of our beautiful showrooms.</p>
@@ -129,10 +137,10 @@ const Homepage = () => {
                 <div className={styles.section7BgContainer}>
                     <img src={section7Bg} alt="showroom" className={styles.section7Bg} />
                 </div>
-            </section>
-            <section className={styles.section8}>
+            </section> */}
+            {/* <section className={styles.section8}>
                 <Section8 />
-            </section>
+            </section> */}
         </div>
     )
 }

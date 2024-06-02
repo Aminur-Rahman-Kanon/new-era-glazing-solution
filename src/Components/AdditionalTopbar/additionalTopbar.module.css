@@ -32,6 +32,7 @@
 
 .rightItem {
     text-decoration: none;
+    text-transform: uppercase;
     width: 140px;
     display: flex;
     justify-content: center;
@@ -41,15 +42,19 @@
     margin: 5px;
     padding: 5px;
     box-sizing: border-box;
-    background-color: #d0e20d;
-    color: rgb(57, 57, 57);
+    /* background-color: #d0e20d; */
+    background-color: transparent;
+    border: 1px solid #ed8129;
+    /* color: rgb(57, 57, 57); */
+    color: #ed8129;
     letter-spacing: 1px;
     transition: all 0.5s ease;
 }
 
 .rightItem:hover {
-    background-color: #b4c408;
-    color: black;
+    /* background-color: #b4c408; */
+    background-color: #ed8129;
+    color: white;
 }
 
 .hr {

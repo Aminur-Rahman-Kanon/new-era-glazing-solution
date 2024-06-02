@@ -15,12 +15,13 @@
     width: 100%;
     height: 100vh;
     min-height: 850px;
-    background-image: url('../../Assets//background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    filter: brightness(0.7);
+}
+
+.bannerVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
 }
 
 .elementContainer {
@@ -78,23 +79,48 @@
 }
 
 .headerLink {
+    position: relative;
     width: 220px;
     height: 40px;
     margin: 0 10px;
-    border: 1px solid #d0e20d;
+    /* border: 1px solid #d0e20d; */
+    border: 1px solid #ed8129;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    color: rgb(80, 79, 79);
-    font-weight: 500;
-    font-size: 15px;
     transition: all 0.5s linear;
-    background-color: #d0e20d;
+    /* background-color: #d0e20d; */
+    text-decoration: none;
+    background-color: transparent;
 }
 
-.headerLink:hover {
-    background-color: #bece09;
+.headerLinkSlider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ed8129;
+    transition: width 0.8s ease;
+    z-index: 0;
+}
+
+.headerLinkText {
+    /* color: rgb(80, 79, 79); */
+    color: #ed8129;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.8s ease;
+    z-index: 1;
+}
+
+.headerLink:hover .headerLinkSlider {
+    width: 100%;
+}
+
+.headerLink:hover .headerLinkText {
+    color: white;
 }
 
 .contactFormContainer {
@@ -231,8 +257,8 @@
 
 .section5Heading {
     font-size: 2.8rem;
-    color: #bece09;
-    font-weight: 200;
+    color: #544a72;
+    font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: unset;
     margin: 0;
@@ -267,9 +293,10 @@
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
-    color:#595c5d;
-    background-color: #d0e20d;
-    border: 1px solid #d0e20d;
+    color: white;
+    /* background-color:#544a72; */
+    background-color: #ed8129;
+    border: 1px solid #ed8129;
     margin-right: 15px;
 }
 
@@ -333,10 +360,10 @@
 
 .section2Heading {
     font-size: 2.8rem;
-    color: #bece09;
+    color: #544a72;
     margin: 0;
     margin-bottom: 40px;
-    font-weight: 200;
+    font-weight: 500;
     letter-spacing: 1px;
 }
 
@@ -360,16 +387,17 @@
     font-size: 14px;
     margin: 10px 0;
     letter-spacing: 1px;
-    border: 2px solid #d0e20d;
+    text-transform: uppercase;
+    border: 2px solid #ed8129;
     font-weight: 600;
-    color: rgb(80, 79, 79);
+    color: #ed8129;
     text-decoration: none;
     transition: all 0.4s linear;
 }
 
 .section2Link:hover {
-    background-color: #d0e20d;
-    color: rgb(80, 79, 79);
+    background-color: #ed8129;
+    color: white;
 }
 
 .section3 {
@@ -404,17 +432,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #595c5d;
-    border-top: 4px solid #d0e20d;
-    border-bottom: 4px solid #d0e20d;
+    background-color: #727272;
+    border-top: 4px solid #F39F5A;
+    border-bottom: 4px solid #F39F5A;
 }
 
 .section3Heading {
     font-size: 2.8rem;
     margin: 0;
     margin-bottom: 40px;
-    color: #d0e20d;
-    font-weight: 100;
+    /* color: #d0e20d; */
+    color: #F39F5A;
+    font-weight: 200;
     letter-spacing: 1px;
 }
 
@@ -439,9 +468,10 @@
     padding: 10px 20px;
     box-sizing: border-box;
     text-decoration: none;
+    text-transform: uppercase;
     color: white;
     margin: 10px auto;
-    border: 2px solid #d0e20d;
+    border: 2px solid #F39F5A;
     font-size: 16px;
     letter-spacing: 1px;
 }
@@ -539,14 +569,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #595c5d;
-    border-top: 4px solid #d0e20d;
-    border-bottom: 4px solid #d0e20d;
+    background-color: #727272;
+    border-top: 4px solid #F39F5A;
+    border-bottom: 4px solid #F39F5A;
 }
 
 .section6Heading2 {
     font-size: 2rem;
-    color: #d0e20d;
+    /* color: #d0e20d; */
+    color: #F39F5A;
     font-weight: 200;
     margin: 0;
     margin-bottom: 40px;

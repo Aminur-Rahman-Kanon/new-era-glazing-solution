@@ -216,6 +216,7 @@
 
 .section2List {
     text-decoration: none;
+    text-transform: uppercase;
     padding: 10px 20px;
     box-sizing: border-box;
     border: 2px solid #bece09;

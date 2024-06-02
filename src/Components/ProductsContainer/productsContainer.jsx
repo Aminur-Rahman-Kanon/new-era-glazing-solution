@@ -52,8 +52,8 @@ const ProductsContainer = ({ product }) => {
                         </div>
                         <div className={styles.section2Header}>
                             <h2 className={styles.headingDark}>{`OUR ${productId.heading}`}</h2>
-                            <p className={styles.paraDark}>At Express, we’ve been manufacturing and installing aluminium bi-fold doors since our inception in 2007. Since then, we’ve been constantly evolving our range, and we’ve even launched a new generation of revolutionary, industry-leading bi-fold doors.</p>
-                            <p className={styles.paraDark}>And because every Express bi-folding door is bespoke and manufactured in-house before being installed by us personally, all of our products come with a minimum 10-year guarantee.</p>
+                            <p className={styles.paraDark}>At New Era, we’ve been manufacturing and installing aluminium bi-fold doors since our inception in 2007. Since then, we’ve been constantly evolving our range, and we’ve even launched a new generation of revolutionary, industry-leading bi-fold doors.</p>
+                            <p className={styles.paraDark}>And because every bi-folding door is bespoke and manufactured in-house before being installed by us personally, all of our products come with a minimum 10-year guarantee.</p>
                             <p className={styles.paraDark}>Take a look at the four great bi-fold door products we manufacture:</p>
                             <div className={styles.section2BottomContainer}>
                                 <h3 className={styles.section2Heading2}>DISCOVER THESE PRODUCTS</h3>

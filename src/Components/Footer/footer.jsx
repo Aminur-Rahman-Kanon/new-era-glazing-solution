@@ -2,8 +2,6 @@ import React from "react";
 import styles from './footer.module.css';
 import logo1 from '../../Assets/logo2.png';
 import logo2 from '../../Assets/made_in_britain.jpg';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { Link } from "react-router-dom";
 import SocialLinkContainer from "../SocialLinkContainer/socialLinkContainer";
 

@@ -93,7 +93,8 @@ input[type=number] {
     top: -12px;
     opacity: 1;
     z-index: 1;
-    background-color: #d0e20d;
+    background-color: #c8742f;
+    color: white;
 }
 
 .attachmentContainer {
@@ -137,9 +138,9 @@ input[type=number] {
 .submitBtn {
     width: 100%;
     height: 40px;
-    background-color: #d0e20d;
-    color: rgb(80, 79, 79);
-    border: 1px solid #d0e20d;
+    background-color: #F39F5A;
+    color: white;
+    border: 1px solid #F39F5A;
     cursor: pointer;
     margin: 10px auto;
     font-size: 13px;
@@ -147,8 +148,8 @@ input[type=number] {
 
 .submitBtn:disabled {
     cursor: default;
-    background-color: #d0e20d7b;
-    color: rgba(80, 79, 79, 0.513);
+    background-color: #F39F5A;
+    color: lightgray;
 }
 
 .statusContainer {

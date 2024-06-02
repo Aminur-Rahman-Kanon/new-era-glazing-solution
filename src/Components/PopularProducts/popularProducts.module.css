@@ -47,10 +47,10 @@
 .headingContainer {
     position: relative;
     top: -20px;
-    background-color: #d0e20d;
+    background-color: #ed8129;
     left: 0;
     width: 80%;
-    border: 2px solid #d0e20d;
+    border: 2px solid #ed8129;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,9 @@
 
 .heading {
   font-size: 1.8rem;
-  color:rgb(125, 125, 125);
+  /* color:rgb(125, 125, 125); */
+  color: #544a72;
+  text-transform: uppercase;
   text-align: center;
   font-weight: 200;
   margin: 0;
@@ -73,7 +75,9 @@
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: rgb(57, 57, 57);
+    /* color: rgb(57, 57, 57); */
+    color: white;
+    text-transform: uppercase;
     text-align: center;
 }
 
@@ -96,16 +100,18 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    border: 2px solid #d0e20d;
-    color: rgb(57, 57, 57);
+    border: 2px solid #ed8129;
+    text-transform: uppercase;
+    color: #ed8129;
     font-size: 14px;
     transition: all 0.4s linear;
     text-align: center;
 }
 
 .link:hover {
-    background-color: #d0e20d;
-    color: rgb(57, 57, 57);
+    /* background-color: #d0e20d; */
+    background-color: #ed8129;
+    color: white;
 }
 
 @media (max-width: 767px) {

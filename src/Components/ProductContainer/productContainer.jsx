@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../Logo/logo';
 import DrawtoggleBtns from '../DrawtoggleBtns/drawtoggleBtns';
-import { products, productImg } from '../../Data/data';
+import { products } from '../../Data/data';
 import ProductContainerPortal from '../ProductContainerPortal/productContainerPortal';
 
 const ProductContainer = () => {
@@ -15,16 +15,17 @@ const ProductContainer = () => {
     const displayProduct = context.displayProduct;
     const toggleDisplayProduct = context.displayProductHandler;
 
-    const [prdImg, setPrdImg] = useState(productImg['ASS 70 FD']);
+    const [prdImg, setPrdImg] = useState('');
 
     const product = products.map(prd => <div key={prd.id} className={styles.productListContainer}>
         <h2 className={styles.productHeading}>{prd.heading}</h2>
         <ul className={styles.products}>
-            {prd.product.map((item, idx) => <li key={idx+10} className={styles.product} onMouseOver={() => setPrdImg(productImg[item])}>
+            {prd.product.map((item, idx) => <li key={idx+10} className={styles.product} onMouseOver={() => setPrdImg(prd.img[idx])}>
                 <a href={`/products/${item}`} className={styles.productLink}>{item}</a>
             </li>)}
         </ul>
     </div>)
+
     return (
         <ProductContainerPortal displayProduct={displayProduct}>
             <div className={styles.productContainer}>

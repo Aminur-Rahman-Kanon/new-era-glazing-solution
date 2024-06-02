@@ -117,9 +117,9 @@ const Sidedrawer = () => {
                                     <li className={styles.item}>
                                         <a href='/our-technology' className={styles.itemLink}>OUR TECHNOLOGY</a>
                                     </li>
-                                    <li className={styles.item}>
+                                    {/* <li className={styles.item}>
                                         <a href={''} className={styles.itemLink}>TESTIMONIAL & REVIEWS</a>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>
@@ -133,7 +133,7 @@ const Sidedrawer = () => {
                                 <h3 className={styles.itemHeading}>THE COMPANY</h3>
                                 <ul className={styles.items}>
                                     <li className={styles.item}>
-                                        <a href='/about-us' className={styles.itemLink}>THE NEW AGE SOLUTION TEAM</a>
+                                        <a href='/about-us' className={styles.itemLink}>THE NEW ERA TEAM</a>
                                     </li>
                                     <li className={styles.item}>
                                         <a href={''} className={styles.itemLink}>VIEW OUR COMPLETED PROJECTS</a>
