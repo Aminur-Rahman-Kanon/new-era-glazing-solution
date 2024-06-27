@@ -209,7 +209,7 @@ const Brochure = () => {
                     </div>
                     <div className={styles.checkboxContainer}>
                         <input type="checkbox" id="checkbox" className={styles.checkbox}onChange={() => setAgreement(true)} />
-                        <label htmlFor="checkbox" className={styles.checkboxLabel}>I'm happy to receive the Express newsletter, exclusive offers, and event invites.</label>
+                        <label htmlFor="checkbox" className={styles.checkboxLabel}>I'm happy to receive New Era's newsletter, exclusive offers, and event invites.</label>
                     </div>
                     <div className={styles.btnContainer}>
                         <button disabled={btnDisable}
