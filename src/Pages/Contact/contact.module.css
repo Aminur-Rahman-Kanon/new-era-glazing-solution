@@ -39,50 +39,37 @@
     text-align: center;
 }
 
-.headingItemP {
-    font-size: 15px;
-    font-weight: 300;
+.headingMediumBlack {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: left;
 }
 
-.headingItemShowroomP {
-    font-size: 15px;
-    font-weight: 300;
+.textMediumBold {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: left;
 }
 
-.headingItemLinkContainer {
-    width: 100%;
-    margin: 20px 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.textMediumBlack {
+    font-size: 0.9rem;
+    margin: 5px 0;
 }
-
-.headingItemLink {
-    width: 200px;
-    height: 40px;
-    margin-right: 15px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #F39F5A;
-    background-color: #F39F5A;
-    color: white;
-    font-size: 14px;
-    font-weight: 400;
-}
-
 
 .headingItemH3 {
     font-size: 1rem;
     font-weight: 400;
     color: rgb(71, 71, 71);
     letter-spacing: 1px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .headingItem {
     width: 100%;
-    margin: 20px auto;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,7 +145,29 @@
     height: 100%;
     border: none;
     outline: none;
-    font-size: 12px;
+    font-size: 13px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.statusMsgContainer {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.statusBtn {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    border: 1px solid #ee842e;
+    background-color: #ee842e;
+    color: white;
+    cursor: pointer;
+    margin: 20px auto;
 }
 
 .submitBtn {
@@ -190,15 +199,16 @@
 
     .contactHeading {
         width: 100%;
+        padding: 0;
     }
 
     .formWrapper {
         width: 100%;
     }
 
-    .headingItem:nth-child(1){
+    /* .headingItem:nth-child(1){
         align-items: center;
-    }
+    } */
 
     .headingItemLinkContainer {
         justify-content: center;
@@ -234,9 +244,9 @@
     .contactContainer {
         padding: 10px;
     }
-    
-    .contactHeading {
-        padding: 10px;
+
+    .statusBtn {
+        max-width: unset;
     }
 }
 

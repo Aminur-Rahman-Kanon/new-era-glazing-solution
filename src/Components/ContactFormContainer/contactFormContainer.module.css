@@ -1,11 +1,12 @@
 .contactFormMain {
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 30px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "DM Sans", sans-serif;
+    border: 1px solid #c8742f;
 }
 
 .contactForm {
@@ -207,5 +208,11 @@ input[type=number] {
 @media (max-width: 767px) {
     .statusBtn {
         width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contactFormMain {
+        padding: 10px 15px;
     }
 }

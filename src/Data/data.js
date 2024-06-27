@@ -162,42 +162,8 @@ export const products = [
     }
 ]
 
-// export const productImg = {
-//     "ass 70 fd": p1,
-//     "as fd 75": p2,
-//     "ob-47": p3,
-//     "ob-49": p4,
-//     "c-line": p5,
-//     "bifold plus": p6,
-//     "visufold": p7,
-//     "ase 60 lift & slide": p8,
-//     "os 20": p9,
-//     "os 44": p10,
-//     "os 77": p20,
-//     "cor vision": p11,
-//     "4700 (lift & slide)": p12,
-//     "UPVC Rehau": p14,
-//     "UPVC Eurocel": p15,
-//     "Aluminium Smart & Cortizo": p15,
-//     "Korniche Aluminium": p16,
-//     "UPVC Velux (Fix & Openable)": p17,
-//     "Aluminium (Fix)": p18,
-//     "UPVC Rehau": p19,
-//     "UPVC Eurocel": p20,
-//     "Aluminium Schuco": p21,
-//     "Aluminium Cortizo": p22,
-//     "Aluminium Origin & Smart": p23,
-//     "UPVC Rehau": p24,
-//     "UPVC Eurocel": p1,
-//     "UPVC Composite": p2,
-//     "Aluminium Schuco": p3,
-//     "Aluminium Cortizo": p4,
-//     "Aluminium Origin & Smart": p5,
-//     "Aluminium Hallmark": p6
-// }
-
 export const brochureItems = [
-    'BI-FOLDING DOORS', 'SLIDING DOORS', 'WINDOWS', 'SUMMARY OF ALL PRODUCTS'
+    'BI-FOLDING DOORS', 'SLIDING DOORS', 'WINDOWS', 'ROOF', 'FRONT DOOR', 'OTHERS'
 ]
 
 export const showrooms = [

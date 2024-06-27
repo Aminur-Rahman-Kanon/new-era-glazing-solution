@@ -21,10 +21,10 @@ const Footer = () => {
             <div className={styles.socialLinkContainer}>
                 <SocialLinkContainer iconColor={'gray'}/>
             </div>
-            <div className={styles.headingContainer}>
+            {/* <div className={styles.headingContainer}>
                 <Link to={''} className={styles.heading}>PRIVACY & COOKIES</Link>
                 <Link to={''} className={styles.heading}>TERMS & CONDITION</Link>
-            </div>
+            </div> */}
             <div className={styles.copyrightContainer}>
                 <p className={styles.copyright}>&copy; New Era Glazing Solution LTD 2024</p>
                 <p className={styles.copyright}>Site by Tall</p>

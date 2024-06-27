@@ -241,6 +241,7 @@
 .headingContainer {
     position: relative;
     width: 55%;
+    max-width: 610px;
     padding: 50px;
     box-sizing: border-box;
     display: flex;

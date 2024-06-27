@@ -38,20 +38,108 @@
 }
 
 .bottomHeader {
-    width: 50%;
+    width: 100%;
     padding: 30px 40px;
     margin: 30px auto;
     box-sizing: border-box;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* border: 1px solid #F39F5A; */
+}
+
+.form {
+    width: 50%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #F39F5A;
+}
+
+.contactHeading {
+    width: 50%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.headingItemH2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: rgb(65, 64, 64);
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.headingMediumBlack {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.textMediumBold {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.textMediumBlack {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.headingItemH3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(71, 71, 71);
+    letter-spacing: 1px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.headingItem {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.headingItemTel {
+    color: rgb(50, 50, 50);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.headingItemTelP {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgb(71, 71, 71);
 }
 
 @media (max-width: 1023px) {
     .bottomHeader {
         width: 90%;
         padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contactHeading {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form {
+        width: 100%;
     }
 
     .topHeaderHeading {
@@ -66,6 +154,15 @@
 @media (max-width: 767px) {
     .wrapper {
         margin-top: 100px;
+    }
+
+    .bottomHeader {
+        width: 100%;
+        padding: 0;
+    }
+
+    .headingItemH2 {
+        font-size: 1.8rem;
     }
 }
 

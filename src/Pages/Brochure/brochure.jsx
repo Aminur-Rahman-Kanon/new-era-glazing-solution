@@ -5,9 +5,7 @@ import brochureBg1 from '../../Assets/brochure_bg_1.jpg';
 import brochureBg2 from '../../Assets/brochure_bg_2.jpg';
 import { Link } from "react-router-dom";
 import { focusElement, leaveFocus, emailValiditionHandler, phoneNumberValidationHandler } from '../../Utilities/utilities';
-import Spinner from "../../Components/Spinner/spinner";
 import Modal from "../../Components/Modal/modal";
-import MessageContainer from "../../Components/MessageContainer/messageContainer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
@@ -40,7 +38,7 @@ const Brochure = () => {
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            if (name && address && email && emailValiditaion && phone && phoneValidation && town && product && requestType && agreement) {
+            if (name && address && email && emailValiditaion && phone && phoneValidation && product && requestType && agreement) {
                 setBtnDisable(false);
             }
             else {
@@ -52,7 +50,7 @@ const Brochure = () => {
             clearTimeout(timer);
         }
 
-    }, [name, address, emailValiditaion, phoneValidation, town, product, requestType, agreement]);
+    }, [name, address, emailValiditaion, phoneValidation, product, requestType, agreement]);
 
     const statusHandler = () => {
         setStatus('');
@@ -64,7 +62,7 @@ const Brochure = () => {
         e.preventDefault();
         setSpinner(true);
 
-        const data = {name, email, phone, address, town, product, requestType, agreement};
+        const data = {name, email, phone, address, product, requestType, agreement};
 
         if (requestType === 'download'){
             await fetch('https://new-era-glazing-solution-server.onrender.com/request-assets-download', {
@@ -175,16 +173,16 @@ const Brochure = () => {
                          onFocus={() => focusElement(3, styles)}
                          onBlur={() => leaveFocus(3, styles)}
                          onChange={(e) => setAddress(e.target.value)}>
-                        <span className={styles.label}>FULL ADDRESS</span>
-                        <input type="text" className={styles.input} placeholder="FULL ADDRESS"/>
+                        <span className={styles.label}>JOB POSTCODE</span>
+                        <input type="text" className={styles.input} placeholder="JOB POSTCODE"/>
                     </div>
-                    <div className={styles.inputContainer}
+                    {/* <div className={styles.inputContainer}
                          onFocus={() => focusElement(5, styles)}
                          onBlur={() => leaveFocus(5, styles)}
                          onChange={(e) => setTown(e.target.value)}>
                         <span className={styles.label}>TOWN / CITY</span>
                         <input type="text" className={styles.input} placeholder="TOWN / CITY"/>
-                    </div>
+                    </div> */}
                     <div className={styles.inputContainer}>
                         <span className={styles.label}>DESIRED PRODUCT</span>
                         <select className={styles.items} defaultValue="SELECT AN ITEM" onChange={(e) => setProduct(e.target.value)}>
@@ -202,6 +200,10 @@ const Brochure = () => {
                             <label className={styles.radioSelectLabel}>
                                 <input type="radio" name="request-type" value="by post" className={styles.radioBtn} onChange={(e) => setRequstType(e.target.value)}/>
                                 <span className={styles.radioValue}>BY POST</span>
+                            </label>
+                            <label className={styles.radioSelectLabel}>
+                                <input type="radio" name="request-type" value="by post" className={styles.radioBtn} onChange={(e) => setRequstType(e.target.value)}/>
+                                <span className={styles.radioValue}>BY EMAIL</span>
                             </label>
                         </div>
                     </div>
@@ -228,7 +230,7 @@ const Brochure = () => {
                         <div className={styles.poster}>
                             <h2 className={styles.potserHeading1}>UNEXPECTEDLY AFFORDABLE</h2>
                             <p className={styles.posterP}>Because all our products are manufactured in house we can make sure production costs are closely managed.</p>
-                            <h3 className={styles.posterHeading3}>Bi-folding doors starting from £3,995</h3>
+                            <h3 className={styles.posterHeading3}>Bi-folding doors starting from £550 + VAT, per panel supply only</h3>
                             <Link to={''} className={styles.posterLink}>OUR PRODUCTS</Link>
                         </div>
                     </div>

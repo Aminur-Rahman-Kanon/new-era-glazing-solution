@@ -78,7 +78,7 @@ const Topbar = () => {
             </div>
             <hr className={styles.hr} />
             <div className={styles.headingBottom}>
-                <span className={styles.bottomHeadingItem}>TRANSFORMING HOME SINCE 2007</span>
+                <span className={styles.bottomHeadingItem}>TRANSFORMING HOME SINCE 2014</span>
                 <span className={styles.bottomHeadingItem}>MADE IN BRITAIN</span>
                 <span className={styles.bottomHeadingItem}>NATIONWIDE SUPPLY & INSTALL SERVICE</span>
             </div>

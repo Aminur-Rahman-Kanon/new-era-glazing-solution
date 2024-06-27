@@ -148,9 +148,9 @@ const ContactFormContainer = () => {
                             style={emailValiditaion ? {boxShadow: '0px 0px 15px 2px #d0e20d00'} : {boxShadow: '0px 0px 15px 2px #9d0e0e'}} />
                 </div>
                 <div className={styles.inputContainer}>
-                    <span className={styles.label}>Full Address</span>
+                    <span className={styles.label}>Job Postcode</span>
                     <input className={styles.input}
-                            placeholder='Full Address'
+                            placeholder='Job Postcode'
                             onFocus={() => focusElement(3, styles)}
                             onBlur={() => leaveFocus(3, styles)}
                             onChange={(e) => setAddress(e.target.value)}/>
