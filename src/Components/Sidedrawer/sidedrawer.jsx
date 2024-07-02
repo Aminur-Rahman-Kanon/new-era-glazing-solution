@@ -6,7 +6,6 @@ import ContextApi from '../ContextApi/contextApi';
 import SidedrawerPortal from '../SidedrawerPortal/sidedrawerPortal';
 import SocialLinkContainer from '../SocialLinkContainer/socialLinkContainer';
 import { displayNestedItemHandler } from '../../Utilities/utilities';
-import ProductSelector from '../ProductSelector/productSelector';
 import { products } from '../../Data/data';
 import Logo from '../Logo/logo';
 import QuoteLink from '../QuoteLink/quoteLink';
@@ -27,9 +26,6 @@ const Sidedrawer = () => {
         <SidedrawerPortal sidedrawer={sidedrawer}>
             <div className={styles.sidedrawerContainer}>
                 <div className={styles.wrapper1}>
-                    <div className={styles.productSelectorContainer}>
-                        <ProductSelector />
-                    </div>
                     <div className={styles.logoContainer}>
                         <Logo />
                     </div>

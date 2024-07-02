@@ -19,51 +19,45 @@ const Topbar = () => {
         const topbarOffset = topbar.offsetTop;
         if (topbar){
             const additionalBanner = topbar.children[0];
+            const phoneNumber = topbar.children[0].children[0].children[0];
             const topbarBtns = topbar.children[2];
-            const logo = topbarBtns.children[0].children[0];
-            const btn1 = topbarBtns.children[1].children[0];
-            const btn2 = topbarBtns.children[1].children[1].children[1];
-            const btn3 = topbarBtns.children[1].children[1].children[0];
+            const logo = topbarBtns.children[0].children[0].children[0];
+            const drawtoggle = topbarBtns.children[1].children[0].children[0].children[0];
+            // const getQuoteLink = topbarBtns.children[1].children[0].children[1];
             const hLine1 = topbar.children[1];
             const hLine2 = topbar.children[3];
             const bottomHeading = topbar.children[4];
+
+            //effect while scroll for first time
             if (window.scrollY > topbarOffset){
                 topbar.style.backgroundColor = 'white';
-                // additionalBanner.children[0].children[0].style.color = '#606060';
+                phoneNumber.style.color = '#ed8129';
+                drawtoggle.style.color = 'black';
                 hLine1.style.display = 'none';
                 additionalBanner.style.display = 'none'
                 logo.src = logoImg2;
-                btn1.style.color = '#606060';
-                btn2.style.color = '#606060';
-                btn3.style.display = 'flex'
                 hLine2.style.display = 'none';
                 bottomHeading.style.display = 'none';
-                if (window.innerWidth <= 900){
-                    btn3.style.display = 'none';
-                }
             }
             else {
                 if (window.innerWidth <= 767){
                     topbar.style.backgroundColor = '#00000091';
                     additionalBanner.style.display = 'none'
                     logo.src = logoImg1;
-                    btn1.style.color = 'white';
+                    drawtoggle.style.color = 'white';
                     hLine1.style.display = 'none';
                     hLine2.style.display = 'block';
-                    btn2.style.color = 'white';
-                    btn3.style.display = 'none'
                     bottomHeading.style.display = 'none';
                 }
                 else {
                     topbar.style.backgroundColor = '#00000091';
-                    additionalBanner.style.display = 'flex'
+                    additionalBanner.style.display = 'flex';
+                    phoneNumber.style.color = '#ed8129';
+                    drawtoggle.style.color = 'white';
                     additionalBanner.children[0].children[0].style.color = 'white';
                     logo.src = logoImg1;
-                    btn1.style.color = 'white';
                     hLine1.style.display = 'block';
                     hLine2.style.display = 'block';
-                    btn2.style.color = 'white';
-                    btn3.style.display = 'none'
                     bottomHeading.style.display = 'flex';
                 }
             }
@@ -73,7 +67,9 @@ const Topbar = () => {
         <div className={styles.topbarContainer} id='topbar'>
             <AdditionalTopbar />
             <div className={styles.bottomContainer}>
-                <Logo />
+                <div className={styles.logo}>
+                    <Logo />
+                </div>
                 <TopbarButtons />
             </div>
             <hr className={styles.hr} />

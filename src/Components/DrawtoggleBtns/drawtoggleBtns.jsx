@@ -11,7 +11,6 @@ const DrawtoggleBtns = () => {
 
     return (
         <div className={styles.drawToggleBtn} onClick={context.sidedrawerHandler}>
-          <span className={styles.text}>Menu</span>
           <FontAwesomeIcon icon={faBars} className={styles.drawToggle}/>
         </div>
     )

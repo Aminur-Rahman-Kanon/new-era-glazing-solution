@@ -1,6 +1,7 @@
 .drawToggleContainer {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
@@ -14,8 +15,8 @@
     align-items: center;
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     .quote {
         display: none;
     }
-}
+} */

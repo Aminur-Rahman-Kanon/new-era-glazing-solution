@@ -6,7 +6,6 @@ import Homepage from './Pages/Homepage/homepage';
 import Footer from './Components/Footer/footer';
 import Sidedrawer from './Components/Sidedrawer/sidedrawer';
 import ContextApi from './Components/ContextApi/contextApi';
-import ProductContainer from './Components/ProductContainer/productContainer';
 import Spinner from './Components/Spinner/spinner';
 import ProductSpinner from './Components/ProductSpinner/productSpinner';
 const Brochure = lazy(() => import('./Pages/Brochure/brochure'));
@@ -22,9 +21,6 @@ const Aboutus = lazy(() => import('./Pages/AboutUs/aboutUs'));
 function App() {
 
     const [sidedrawer, setSidedrawer] = useState(false);
-
-    const [displayProduct, setDisplayProduct] = useState(false);
-
     const [product, setProduct] = useState([]);
 
     useEffect(() => {
@@ -38,25 +34,14 @@ function App() {
     }, []);
 
     const sidedrawerHandler = () => {
-      if (displayProduct){
-        setDisplayProduct(false);
-      }
       setSidedrawer((sidedrawer) => !sidedrawer);
-    }
-
-    const displayProductHandler = () => {
-      if (sidedrawer){
-        setSidedrawer(false);
-      }
-      setDisplayProduct(() => !displayProduct);
     }
 
     return (
       <div className="App">
-        <ContextApi.Provider value={{ sidedrawer, sidedrawerHandler, displayProduct, displayProductHandler, product }}>
+        <ContextApi.Provider value={{ sidedrawer, sidedrawerHandler, product }}>
             <Topbar />
             <Sidedrawer />
-            <ProductContainer />
             <Routes>
               <Route path='/' element={<Homepage />}/>
               <Route path='/brochure' element={<Suspense fallback={<Spinner spinner={true}/>}>

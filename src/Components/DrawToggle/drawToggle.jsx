@@ -7,10 +7,10 @@ const DrawToggle = () => {
 
     return (
       <div className={styles.drawToggleContainer}>
+        <DrawtoggleBtns />
         <div className={styles.quote}>
           <QuoteLink />
         </div>
-        <DrawtoggleBtns />
       </div>
     )
 }

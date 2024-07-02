@@ -54,4 +54,8 @@
     .headingBottom {
         display: none!important;
     }
+
+    .logo {
+        filter: opacity(0);
+    }
 }
