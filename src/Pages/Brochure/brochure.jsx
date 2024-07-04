@@ -65,7 +65,7 @@ const Brochure = () => {
         const data = {name, email, phone, address, product, requestType, agreement};
 
         if (requestType === 'download'){
-            await fetch('https://new-era-glazing-solution-server.onrender.com/request-assets-download', {
+            await fetch('https://new-era-glazing-solution-server-f28f.onrender.com/request-assets-download', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -85,7 +85,7 @@ const Brochure = () => {
             });
         }
         else {
-            await fetch('https://new-era-glazing-solution-server.onrender.com/request-assets-post', {
+            await fetch('https://new-era-glazing-solution-server-f28f.onrender.com/request-assets-post', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

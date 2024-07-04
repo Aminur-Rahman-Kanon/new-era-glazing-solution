@@ -32,7 +32,7 @@ const Contact = () => {
         setSpinner(true);
 
         const dataToSend = { name, phone, email, postCode, details };
-        await fetch('https://new-era-glazing-solution-server.onrender.com/contact', {
+        await fetch('https://new-era-glazing-solution-server-f28f.onrender.com/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
