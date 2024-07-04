@@ -50,6 +50,10 @@
     letter-spacing: 1px;
 }
 
+.logo {
+    z-index: 1;
+}
+
 @media (max-width: 767px) {
     .headingBottom {
         display: none!important;
