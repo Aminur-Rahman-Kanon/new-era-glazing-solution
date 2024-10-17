@@ -27,7 +27,7 @@ const Footer = () => {
             </div> */}
             <div className={styles.copyrightContainer}>
                 <p className={styles.copyright}>&copy; New Era Glazing Solution LTD 2024</p>
-                <p className={styles.copyright}>Site by Tall</p>
+                <p className={styles.copyright}>Site by Tridiva IT Ltd</p>
             </div>
         </div>
     )

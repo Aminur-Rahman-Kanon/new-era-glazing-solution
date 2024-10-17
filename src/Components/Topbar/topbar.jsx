@@ -5,6 +5,7 @@ import Logo from '../Logo/logo';
 import TopbarButtons from '../TopbarButtons/topbarButtons';
 import logoImg1 from '../../Assets/logo1.png';
 import logoImg2 from '../../Assets/logo2.png';
+import DrawToggle from '../DrawToggle/drawToggle';
 
 
 const Topbar = () => {
@@ -22,7 +23,7 @@ const Topbar = () => {
             const phoneNumber = topbar.children[0].children[0].children[0];
             const topbarBtns = topbar.children[2];
             const logo = topbarBtns.children[0].children[0].children[0];
-            const drawtoggle = topbarBtns.children[1].children[0].children[0].children[0];
+            const drawtoggle = topbarBtns.children[1];
             // const getQuoteLink = topbarBtns.children[1].children[0].children[1];
             const hLine1 = topbar.children[1];
             const hLine2 = topbar.children[3];
@@ -30,7 +31,7 @@ const Topbar = () => {
 
             //effect while scroll for first time
             if (window.scrollY > topbarOffset){
-                topbar.style.backgroundColor = 'white';
+                topbar.style.backgroundColor = '#ffffffde';
                 phoneNumber.style.color = '#ed8129';
                 drawtoggle.style.color = 'black';
                 hLine1.style.display = 'none';
@@ -70,7 +71,7 @@ const Topbar = () => {
                 <div className={styles.logo}>
                     <Logo />
                 </div>
-                <TopbarButtons />
+                <DrawToggle />
             </div>
             <hr className={styles.hr} />
             <div className={styles.headingBottom}>

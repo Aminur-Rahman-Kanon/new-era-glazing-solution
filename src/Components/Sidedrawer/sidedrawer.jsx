@@ -33,31 +33,7 @@ const Sidedrawer = () => {
                         <FontAwesomeIcon icon={faX} className={styles.xBtn} onClick={toggleSidedrawer}/>
                     </div>
                 </div>
-                <hr className={styles.hr}/>
                 <div className={styles.wrapper2}>
-                    <div className={styles.heading1Container}>
-                        <div className={styles.headingItem}>
-                            <a href='#' className={styles.heading} >
-                                <div className={styles.headingImgContainer} id={styles.headingItem1}></div>
-                                <span className={styles.headingText}>VISIT A SHOWROOM</span>
-                            </a>
-                        </div>
-                        <div className={styles.headingItem}>
-                            <a className={styles.heading} id={styles.headingItem2}>
-                                <div className={styles.headingImgContainer} id={styles.headingItem2}></div>
-                                <span className={styles.headingText}>THE DIFFERENCE</span>
-                            </a>
-                        </div>
-                        <div className={styles.headingItem}>
-                            <a className={styles.heading} id={styles.headingItem3}>
-                                <div className={styles.headingImgContainer} id={styles.headingItem3}></div>
-                                <span className={styles.headingText}>PRODUCT COLLECTION</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div className={styles.quoteLink}>
-                        <QuoteLink />
-                    </div>
                     <div className={styles.heading2Container}>
                         <div className={styles.itemContainer}>
                             <h3 className={`${styles.itemHeading} ${styles.main}`}>OUR PRODUCTS</h3>
@@ -98,24 +74,6 @@ const Sidedrawer = () => {
                                 </ul>
                             </div>
                         </div>
-                        {/* <div className={styles.itemContainer}>
-                            <h3 className={`${styles.itemHeading} ${styles.main}`}>THE DIFFERENCE</h3>
-                            <div className={styles.itemsContainer}>
-                                <div className={styles.backBtnContainer}>
-                                    <FontAwesomeIcon icon={faChevronLeft} className={styles.backBtnIcon} />
-                                    <span className={styles.backBtn}>BACK</span>
-                                </div>
-                                <h3 className={styles.itemHeading}>THE DIFFERENCE</h3>
-                                <ul className={styles.items}>
-                                    <li className={styles.item}>
-                                        <a href='/our-technology' className={styles.itemLink}>OUR TECHNOLOGY</a>
-                                    </li>
-                                    <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>TESTIMONIAL & REVIEWS</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> */}
                         <div className={styles.itemContainer}>
                             <h3 className={`${styles.itemHeading} ${styles.main}`}>THE COMPANY</h3>
                             <div className={styles.itemsContainer}>
@@ -128,36 +86,12 @@ const Sidedrawer = () => {
                                     <li className={styles.item}>
                                         <a href='/about-us' className={styles.itemLink}>THE NEW ERA TEAM</a>
                                     </li>
-                                    {/* <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>VIEW OUR COMPLETED PROJECTS</a>
-                                    </li> */}
-                                    {/* <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>ACCREDITATION</a>
-                                    </li> */}
                                     <li className={styles.item}>
                                         <a href='/our-process' className={styles.itemLink}>OUR PROCESS</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        {/* <div className={styles.itemContainer}>
-                            <h3 className={`${styles.itemHeading} ${styles.main}`}>NEWS & BLOG</h3>
-                            <div className={styles.itemsContainer}>
-                                <div className={styles.backBtnContainer}>
-                                    <FontAwesomeIcon icon={faChevronLeft} className={styles.backBtnIcon} />
-                                    <span className={styles.backBtn}>BACK</span>
-                                </div>
-                                <h3 className={styles.itemHeading}>NEWS & BLOG</h3>
-                                <ul className={styles.items}>
-                                    <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>EVENTS & EXHIBITIONS</a>
-                                    </li>
-                                    <li className={styles.item}>
-                                        <a href={''} className={styles.itemLink}>LATEST NEWS</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> */}
                         <div className={styles.itemContainer}>
                             <h3 className={`${styles.itemHeading} ${styles.main}`}>TRADE AND COMMERCIAL</h3>
                             <div className={styles.itemsContainer}>
@@ -182,6 +116,9 @@ const Sidedrawer = () => {
                     </div>
                 </div>
                 <div className={styles.socialLinkWrapper}>
+                    <div className={styles.quoteLink}>
+                        <QuoteLink />
+                    </div>
                     <h2 className={styles.socialLinkHeading}>FOLLOW NEW ERA GLAZING SOLUTION</h2>
                     <SocialLinkContainer iconColor={'rgb(202, 202, 202)'}/>
                 </div>

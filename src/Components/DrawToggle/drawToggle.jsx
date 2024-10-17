@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from './drawToggle.module.css';
-import QuoteLink from '../QuoteLink/quoteLink';
-import DrawtoggleBtns from '../DrawtoggleBtns/drawtoggleBtns';
+import ContextApi from '../ContextApi/contextApi';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const DrawToggle = () => {
 
-    return (
-      <div className={styles.drawToggleContainer}>
-        <DrawtoggleBtns />
-        <div className={styles.quote}>
-          <QuoteLink />
-        </div>
+  const context = useContext(ContextApi);
+
+  return (
+      <div className={styles.drawToggleBtn} onClick={context.sidedrawerHandler}>
+        <FontAwesomeIcon icon={faBars} className={styles.drawToggle}/>
       </div>
-    )
+  )
 }
 
 export default DrawToggle;

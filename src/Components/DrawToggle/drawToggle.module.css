@@ -1,22 +1,24 @@
-.drawToggleContainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-}
-
-.quote {
-    width: 150px;
-    height: 30px;
-    margin: 5px;
-    display: flex;
+.drawToggleBtn {
+    display: none;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
+    color: white;
 }
 
-/* @media (max-width: 900px) {
-    .quote {
-        display: none;
+.drawToggle {
+    color: inherit;
+    font-size: 25px;
+    transition: all 0.4s ease;
+    /* margin-left: 10px; */
+}
+
+.drawToggleContainer:hover .drawToggle {
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .drawToggleBtn {
+        display: flex;
     }
-} */
+}

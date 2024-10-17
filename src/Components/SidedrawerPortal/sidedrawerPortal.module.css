@@ -10,7 +10,7 @@
     align-items: flex-start;
     transition: all 0.7s ease;
     transform: translateX(-100%);
-    overflow-y: scroll;
+    overflow-y: auto;
     background-color: rgb(85, 85, 85);
 }
 

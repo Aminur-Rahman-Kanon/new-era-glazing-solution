@@ -19,6 +19,7 @@
     width: 100%;
     box-sizing: border-box;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
 }
@@ -52,6 +53,7 @@
 
 .logo {
     z-index: 1;
+    margin: 10px;
 }
 
 @media (max-width: 767px) {
@@ -59,7 +61,11 @@
         display: none!important;
     }
 
-    .logo {
-        filter: opacity(0);
+    .bottomContainer {
+        justify-content: space-between;
     }
+
+    /* .logo {
+        filter: opacity(0);
+    } */
 }
