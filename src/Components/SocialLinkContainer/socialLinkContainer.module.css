@@ -15,7 +15,8 @@
 }
 
 .socialIconContainer:hover {
-    color: #99a703;
+    /* color: #99a703; */
+    color: #ed8129;
 }
 
 .socialIcon {

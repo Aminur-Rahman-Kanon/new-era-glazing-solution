@@ -91,10 +91,12 @@
     transition: all 0.5s linear;
     /* background-color: #d0e20d; */
     text-decoration: none;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: #ed8129;
 }
 
 .headerLinkSlider {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -107,7 +109,8 @@
 
 .headerLinkText {
     /* color: rgb(80, 79, 79); */
-    color: #ed8129;
+    /* color: #ed8129; */
+    color: white;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 15px;
@@ -115,12 +118,12 @@
     z-index: 1;
 }
 
-.headerLink:hover .headerLinkSlider {
+/* .headerLink:hover .headerLinkSlider {
     width: 100%;
-}
+} */
 
-.headerLink:hover .headerLinkText {
-    color: white;
+.headerLink:hover {
+    background-color: #d15f01;
 }
 
 .contactFormContainer {
@@ -257,7 +260,7 @@
 
 .section5Heading {
     font-size: 2.8rem;
-    color: #544a72;
+    color: grey;
     font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: unset;
@@ -360,7 +363,7 @@
 
 .section2Heading {
     font-size: 2.8rem;
-    color: #544a72;
+    color: grey;
     margin: 0;
     margin-bottom: 40px;
     font-weight: 500;
