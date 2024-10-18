@@ -383,7 +383,7 @@
 @media (max-width: 767px) {
     .socialLinkWrapper {
         position: absolute;
-        bottom: 0;
+        bottom: calc(0% + 100px);
         left: 0;
     }
 }
