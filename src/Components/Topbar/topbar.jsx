@@ -20,10 +20,10 @@ const Topbar = () => {
         const topbarOffset = topbar.offsetTop;
         if (topbar){
             const additionalBanner = topbar.children[0];
-            const phoneNumber = topbar.children[0].children[0].children[0];
             const topbarBtns = topbar.children[2];
-            const logo = topbarBtns.children[0].children[0].children[0];
-            const drawtoggle = topbarBtns.children[1];
+            const phoneNumber = topbarBtns.children[0];
+            const logo = topbarBtns.children[1].children[0].children[0];
+            const drawtoggle = topbarBtns.children[2];
             // const getQuoteLink = topbarBtns.children[1].children[0].children[1];
             const hLine1 = topbar.children[1];
             const hLine2 = topbar.children[3];
@@ -32,7 +32,8 @@ const Topbar = () => {
             //effect while scroll for first time
             if (window.scrollY > topbarOffset){
                 topbar.style.backgroundColor = '#ffffffde';
-                phoneNumber.style.color = '#ed8129';
+                // phoneNumber.style.display = 'none';
+                phoneNumber.style.color = 'black';
                 drawtoggle.style.color = 'black';
                 hLine1.style.display = 'none';
                 additionalBanner.style.display = 'none'
@@ -49,11 +50,13 @@ const Topbar = () => {
                     hLine1.style.display = 'none';
                     hLine2.style.display = 'block';
                     bottomHeading.style.display = 'none';
+                    phoneNumber.style.display = 'flex';
+                    phoneNumber.style.color = 'white';
                 }
                 else {
                     topbar.style.backgroundColor = '#00000091';
                     additionalBanner.style.display = 'flex';
-                    phoneNumber.style.color = '#ed8129';
+                    phoneNumber.style.display = 'none';
                     drawtoggle.style.color = 'white';
                     additionalBanner.children[0].children[0].style.color = 'white';
                     logo.src = logoImg1;
@@ -68,6 +71,10 @@ const Topbar = () => {
         <div className={styles.topbarContainer} id='topbar'>
             <AdditionalTopbar />
             <div className={styles.bottomContainer}>
+                <div className={styles.numberContainer}>
+                    <a href='tel:+447507985976' className={styles.number}>+44 7507 985 976</a>
+                    <a href='tel:+447769345311' className={styles.number}>+44 7769 345 311</a>
+                </div>
                 <div className={styles.logo}>
                     <Logo />
                 </div>

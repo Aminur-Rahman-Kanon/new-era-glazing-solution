@@ -33,6 +33,7 @@ const RequestQuote = () => {
                     <div className={styles.headingItem}>
                         <h3 className={styles.headingItemH3}>CALL US</h3>
                         <a href='tel:+447507985976' className={styles.headingItemTel}>+44 7507 985 976</a>
+                        <a href='tel:+447769345311' className={styles.headingItemTel}>+44 7769 345 311</a>
                         <p className={styles.headingItemTelP}>We are open Mon-Fri – 9am-5pm</p>
                     </div>
                 </div>

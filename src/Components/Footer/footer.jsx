@@ -2,11 +2,9 @@ import React from "react";
 import styles from './footer.module.css';
 import logo1 from '../../Assets/logo2.png';
 import logo2 from '../../Assets/made_in_britain.jpg';
-import { Link } from "react-router-dom";
 import SocialLinkContainer from "../SocialLinkContainer/socialLinkContainer";
 
 const Footer = () => {
-
     return (
         <div className={styles.footerContainer}>
             <hr className={styles.hr} />
@@ -16,6 +14,7 @@ const Footer = () => {
             </div>
             <div className={styles.contactContainer}>
                 <h3 className={styles.contactHeading1}>+44 7507 985 976</h3>
+                <h3 className={styles.contactHeading1}>+44 7769 345 311</h3>
                 <p className={styles.text}>Lines are open Mon-Sat - 8:30am-5:00pm</p>
             </div>
             <div className={styles.socialLinkContainer}>

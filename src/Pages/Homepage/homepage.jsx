@@ -67,7 +67,7 @@ const Homepage = () => {
                     <p className={styles.section5P1}>Are You Looking For Readymade Doors? Or Need Custom ?</p>
                     <p className={styles.section5P2}>Project Windows and Doors is an Australian-owned company ur adipisci sed do eiusmodthat provides high-quality products and expertise for windows and doors needs. Whether you are a builder or a</p>
                     <div className={styles.section5LinkContainer}>
-                        <Link className={styles.section5Link1}>More About Us</Link>
+                        <Link to={'/about-us'} className={styles.section5Link1}>More About Us</Link>
                         <a href='tel:+447875531847' className={styles.section5Link2}>
                             <FontAwesomeIcon icon={faPhoneVolume} className={styles.section5Link2Icon}/>
                             <span className={styles.section5Text}>+44 7875 531847</span>

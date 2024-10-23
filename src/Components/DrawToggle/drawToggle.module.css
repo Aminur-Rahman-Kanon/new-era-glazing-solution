@@ -1,9 +1,11 @@
 .drawToggleBtn {
+    width: 100px;
     display: none;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin-left: 10px;
     color: white;
+
 }
 
 .drawToggle {
@@ -20,5 +22,11 @@
 @media (max-width: 767px) {
     .drawToggleBtn {
         display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    .drawToggleBtn {
+        width: 80px;
     }
 }
